@@ -24,11 +24,14 @@ In the following tables, X means the install # threshold and P(x <= X) means the
 
 * True Positives of 2.2K Validation IoT Apps
 
-![True Positives of 2.2K Validation IoT Apps](ccs_rebuttal_data/tp_2K.PNG)
+<img src="ccs_rebuttal_data/tp_2K.PNG" alt="drawing" width="400"/>
+<!-- ![True Positives of 2.2K Validation IoT Apps](ccs_rebuttal_data/tp_2K.PNG =150x) -->
 
 * False Positives of 2.2K Validation IoT Apps
 
-![False Positives of 2.2K Validation IoT Apps](ccs_rebuttal_data/fp_2K.PNG)
+<img src="ccs_rebuttal_data/fp_2K.PNG" alt="drawing" width="400"/>
+
+<!-- ![False Positives of 2.2K Validation IoT Apps](ccs_rebuttal_data/fp_2K.PNG) -->
 
 * 7.2K Labeled Training Apps
 
@@ -42,7 +45,9 @@ In the following tables, X means the install # threshold and P(x <= X) means the
 
 * The CDF Curves for Different App Sets
 
-![CDF curves for different app sets](ccs_rebuttal_data/merged.png)
+<img src="ccs_rebuttal_data/merged.png" alt="drawing" width="600"/>
+
+<!-- ![CDF curves for different app sets](ccs_rebuttal_data/merged.png) -->
 
 * 37,783 Identified IoT App
 
