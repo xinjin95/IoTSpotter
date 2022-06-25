@@ -22,6 +22,14 @@ In the following tables, X means the install # threshold and P(x <= X) means the
 
 ![2.2K Validation IoT App CDF](ccs_rebuttal_data/ecdf_2K_validation.png)
 
+* True Positives of 2.2K Validation IoT Apps
+
+![True Positives of 2.2K Validation IoT Apps](ccs_rebuttal_data/tp_2K.PNG)
+
+* False Positives of 2.2K Validation IoT Apps
+
+![False Positives of 2.2K Validation IoT Apps](ccs_rebuttal_data/fp_2K.PNG)
+
 * 7.2K Labeled Training Apps
 
 ![7.2K Labeled Training App CDF](ccs_rebuttal_data/ecdf_training_set.png)
@@ -34,7 +42,7 @@ In the following tables, X means the install # threshold and P(x <= X) means the
 
 * 37,783 Identified IoT App
 
-![37K IoT App CDF](ccs_rebuttal_data/37k_cdf_new.png)
+![37K IoT App CDF](ccs_rebuttal_data/37k_cdf_new.png){ width=50%}
 
 * All (2 million+) Google Play Apps
 
@@ -43,6 +51,14 @@ In the following tables, X means the install # threshold and P(x <= X) means the
 * 2.2K Validation IoT Apps
 
 ![2.2K Validation IoT App CDF](ccs_rebuttal_data/2200_validation_cdf.png)
+
+* True Positives of 2.2K Validation IoT Apps
+
+![True Positives of 2.2K Validation IoT Apps](ccs_rebuttal_data/validation_true_positive.png)
+
+* False Positives of 2.2K Validation IoT Apps
+
+![False Positives of 2.2K Validation IoT Apps](ccs_rebuttal_data/validation_false_positive.png)
 
 * 7.2K Labeled Training Apps
 
