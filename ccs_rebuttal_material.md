@@ -40,7 +40,7 @@ In the following tables, X means the install # threshold and P(x <= X) means the
 
 ### CDF
 
-* The CDF Curves for Differ App Sets
+* The CDF Curves for Different App Sets
 
 ![CDF curves for different app sets](ccs_rebuttal_data/merged.png)
 
