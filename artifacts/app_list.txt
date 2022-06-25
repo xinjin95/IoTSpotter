@@ -1571,4 +1571,8 @@ com.tplink.tether
 com.dinsafer.nova
 com.heyi.smartalarm
 com.dadublock.www
+<<<<<<< HEAD
 it.telecomitalia.iotim
+=======
+it.telecomitalia.iotim
+>>>>>>> 97e3a14fcbd3e4288d0cde120dc84cd147ae3ce0
