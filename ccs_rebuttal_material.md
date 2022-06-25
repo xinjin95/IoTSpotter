@@ -40,6 +40,10 @@ In the following tables, X means the install # threshold and P(x <= X) means the
 
 ### CDF
 
+* The CDF Curves for Differ App Sets
+
+![CDF curves for different app sets](ccs_rebuttal_data/merged.png)
+
 * 37,783 Identified IoT App
 
 ![37K IoT App CDF](ccs_rebuttal_data/37k_cdf_new.png){ width=50%}
