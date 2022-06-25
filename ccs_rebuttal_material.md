@@ -51,24 +51,36 @@ In the following tables, X means the install # threshold and P(x <= X) means the
 
 * 37,783 Identified IoT App
 
-![37K IoT App CDF](ccs_rebuttal_data/37k_cdf_new.png){ width=50%}
+<img src="ccs_rebuttal_data/37k_cdf_new.png" alt="drawing" width="600"/>
+
+<!-- ![37K IoT App CDF](ccs_rebuttal_data/37k_cdf_new.png){ width=50%} -->
 
 * All (2 million+) Google Play Apps
 
-![2M GPlay App CDF](ccs_rebuttal_data/2M_app_cdf.png)
+<img src="ccs_rebuttal_data/2M_app_cdf.png" alt="drawing" width="600"/>
+
+<!-- ![2M GPlay App CDF](ccs_rebuttal_data/2M_app_cdf.png) -->
 
 * 2.2K Validation IoT Apps
 
-![2.2K Validation IoT App CDF](ccs_rebuttal_data/2200_validation_cdf.png)
+<img src="ccs_rebuttal_data/2200_validation_cdf.png" alt="drawing" width="600"/>
+
+<!-- ![2.2K Validation IoT App CDF](ccs_rebuttal_data/2200_validation_cdf.png) -->
 
 * True Positives of 2.2K Validation IoT Apps
 
-![True Positives of 2.2K Validation IoT Apps](ccs_rebuttal_data/validation_true_positive.png)
+<img src="ccs_rebuttal_data/validation_true_positive.png" alt="drawing" width="600"/>
+
+<!-- ![True Positives of 2.2K Validation IoT Apps](ccs_rebuttal_data/validation_true_positive.png) -->
 
 * False Positives of 2.2K Validation IoT Apps
 
-![False Positives of 2.2K Validation IoT Apps](ccs_rebuttal_data/validation_false_positive.png)
+<img src="ccs_rebuttal_data/validation_false_positive.png" alt="drawing" width="600"/>
+
+<!-- ![False Positives of 2.2K Validation IoT Apps](ccs_rebuttal_data/validation_false_positive.png) -->
 
 * 7.2K Labeled Training Apps
 
-![7.2K Labeled Training App CDF](ccs_rebuttal_data/training_set_cdf.png)
+<img src="ccs_rebuttal_data/training_set_cdf.png" alt="drawing" width="600"/>
+
+<!-- ![7.2K Labeled Training App CDF](ccs_rebuttal_data/training_set_cdf.png) -->
