@@ -163,7 +163,7 @@ def train_embedding():
     model.fit(x_train, y_train, epochs=100, batch_size=100, validation_data=(x_validation, y_validation))
     # training_generator = DataGenerator(x_set=x_train, y_set=y_train, batch_size=100)
     # validation_generator = DataGenerator(x_set=x_validation, y_set=y_validation, batch_size=100)
-    model_save_path = "../data/classifiers/bilstm_embedding_new_data_included.h5"
+    model_save_path = "../data/classifiers/bilstm_new_training.h5"
     # checkpoint = ModelCheckpoint(model_save_path, monitor='val_accuracy', verbose=0, save_best_only=True,
     #                              save_weights_only=False, mode='auto')
     # model.fit_generator(training_generator, steps_per_epoch=math.ceil(len(y_train)/100), epochs=100, verbose=1,
