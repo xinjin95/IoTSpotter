@@ -12,7 +12,7 @@ We provide the corpus and IoTSpotter identification results. Please don't distri
 
 ### 1. 37K mobile-IoT apps
 
-The metadata of our identified 37K IoT apps is [here](https://drive.google.com/file/d/1Fq4sGUpEuU7EPnZuxMMCZdWlBXjDD8wN/view?usp=sharing). Each line of the metadata file is a json object, e.g.,
+37K mobile-IoT apps are listed in this [file](data/apk_androzoo_sha256/xin_sunil_shared_sha256_androzoo.csv). The metadata of our identified 37K IoT apps is [here](https://drive.google.com/file/d/1Fq4sGUpEuU7EPnZuxMMCZdWlBXjDD8wN/view?usp=sharing). Each line of the metadata file is a json object, e.g.,
 ```json
 {
   "title": "Doodle It - Pictionary for your Chromecast",
