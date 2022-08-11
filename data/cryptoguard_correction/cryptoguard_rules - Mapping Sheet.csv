@@ -1,0 +1,15 @@
+Rule_in_tool,Rule_in_cryptoguard_paper,Rule_in_cryptoguard_paper
+Rule 1: Found broken crypto schemes,"14,""64-bit block ciphers (e.g., DES, IDEA, Blowfish, RC4, RC2)""","11,ECB mode in symmetric ciphers"
+Rule 2: Found broken hash functions,"16,""Insecure cryptographic hash (e.g., SHA1, MD5, MD4, MD2)""",
+Rule 3: Used constant keys in code,"1,Predictable/constant cryptographic keys",
+Rule 4: Uses untrusted TrustManager,"5,Custom TrustManager to trust all certificates",
+Rule 5: Used export grade public Key,"15,""Insecure asymmetric ciphers (e.g, RSA, ECC)""",
+Rule 6: Uses untrusted HostNameVerifier,"4,Custom Hostname verifiers to accept all hosts",
+Rule 7: Used HTTP Protocol,"7,Occasional use of HTTP",
+Rule 8: Used < 1000 iteration for PBE,"13,""Fewer than 1,000 iterations for PBE""",
+Rule 9: Found constant salts in code,"10,Static Salts in PBE","2,Predictable/constant passwords for PBE"
+Rule 10: Found constant IV in code,"12,Static IVs in CBC mode symmetric ciphers",
+Rule 11: Found predictable seeds in code,"8,Predictable/constant PRNG seeds",
+Rule 12: Does not manually verify the hostname,"6,Custom SSLSocketFactory w/o manual Hostname verification",
+Rule 13: Untrused PRNG (java.util.Random),"9,""Cryptographically insecure PRNGs (e.g., java.util.Random)""",
+Rule 14: Used Predictable KeyStore Password,"3,Predictable/constant passwords for KeyStore",
