@@ -119,7 +119,101 @@ To classify model, run the following commands:
 For the BERT model, we provide the script and instructions along with the classifier via this [link](https://drive.google.com/file/d/1D080URvXGGYAcg6TKX4RxLUPorKppY0i/view?usp=sharing).
 
 
-### 6. IoT library vulnerability analysis
+## IoT product NER model
 
-### 6. Cryptograph-API misuse analysis
+For the NER model, we give instructions on how to run it along with our [code](https://drive.google.com/file/d/1HxqHFE-VnofdMNHWEyyjLXymRMzrzWfn/view?usp=sharing).
+
+## IoT library vulnerability analysis
+
+### 1. Crawl IoT Specific Libraries from Maven Repository
+
+To crawl the library file from maven repository, you have to first prepare a lost of starting [links](data/maven_crawling/maven_matched.txt), e.g., 
+
+```json
+{
+  "package_name": "com.threeplay.android",
+  "search_item": "com.threeplay.android maven",
+  "links": [
+    "https://mvnrepository.com/artifact/com.threeplay.libraries",
+    "https://mvnrepository.com/artifact/com.threeplay",
+    "https://github.com/Triple-T/gradle-play-publisher",
+    "https://www.programmersought.com/article/61136303813/",
+    "https://www.fanduel.com/threeplay-giveaway",
+    "https://www.py4u.net/discuss/613115",
+    "https://thetoymaven.com/product/el-shop-learn-cash-register/",
+    "https://maven-music-player-3d-sound.apk.gold/android-9.0",
+    "https://workplacemaven.com/dream-meaning-casino/",
+    "https://mirrors.huaweicloud.com/repository/maven/com/",
+    "https://ideas.walmart.ca/best-tech-gifts/",
+    "http://www.mobyware.org/zte-z835-maven-3-lte-device-11321/sport-games-tag/pedal-up-download-333356.html",
+    "https://time.com/3418190/best-video-games-of-fall-2014/",
+    "https://cdmana.com/2021/07/20210725045305968x.html",
+    "https://luxembourgish.english-dictionary.help/english-to-luxembourgish-meaning-connoisseur",
+    "https://vault.si.com/vault/2004/06/21/fantasy-world-these-three-play-your-neighbor-plays-your-boss-plays-everybody-plays-once-the-secret-preserve-of-stats-geeks-fantasy-sports-are-now-a-billion-dollar-business"
+  ],
+  "matched_links": [
+    "https://mvnrepository.com/artifact/com.threeplay.libraries",
+    "https://mvnrepository.com/artifact/com.threeplay"
+  ]
+}
+```
+where `package_name` is the IoT specific package name, `search_item` is the keywords for google search, `links` is the google search top results, and `matched_links` is the maven repo links in google search results.
+
+Commands to run the maven repo crawler:
+
+`python maven_repo/large_scale_maven_crawler.py`
+
+After crawling a list of library jar files will be downloaded, you can identify the vulnerable libraries and related CVEs in this [folder](data/maven_crawling). we then use [LibScout](https://github.com/reddr/LibScout) to detect the vulnerable library usages. 
+
+## Cryptograph-API misuse analysis
+
+For crypto-API misuse analysis, we rely on the popular crypto analysis tools, [CryptoGuard](https://dl.acm.org/doi/10.1145/3319535.3345659) and [Cognicrypt](https://doi.org/10.1109/TSE.2019.2948910). You can refer to their repositories for setup instructions.
+
+## APK signature vulnerability analysis
+
+We rely on Apksigner to identify Janus vulnerabilities. The basic commands for detecting the vulnerabilities are:
+
+```python
+import os
+
+apk_path = path_to_target_apk
+
+result_path = path_to_detection_result
+
+cmd = f"apksigner verify --print-certs --verbose  -Werr {apk_path} | tee {result_path}"
+os.system(cmd)
+```
+
+For more inferomation about `apksigner`, please refer to this [link](https://developer.android.com/studio/command-line/apksigner).
+
+To parse the detection results, we developed a function:
+
+```python
+def parse_one_app(file_path): # file_path is the path to the detection result file
+    res = ['', '', '', '']
+    with open(file_path, 'r') as f:
+        for line in f:
+            line = line.strip('\n')
+            if "(JAR signing): " in line:
+                line = line.split('(JAR signing): ')
+                res[0] = line[1]
+            elif "(APK Signature Scheme v2): " in line:
+                line = line.split("(APK Signature Scheme v2): ")
+                res[1] = line[1]
+            elif "(APK Signature Scheme v3): " in line:
+                line = line.split("(APK Signature Scheme v3): ")
+                res[2] = line[1]
+            elif "(APK Signature Scheme v4): " in line:
+                line = line.split("(APK Signature Scheme v4): ")
+                res[3] = line[1]
+    result = []
+    for r in res:
+        if r == 'true':
+            result.append(1)
+        elif r == 'false':
+            result.append(0)
+        else:
+            result.append(0)
+    return result
+```
 
