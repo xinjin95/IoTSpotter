@@ -169,7 +169,7 @@ After crawling a list of library jar files will be downloaded, you can identify 
 
 For crypto-API misuse analysis, we rely on the popular crypto analysis tools, [CryptoGuard](https://dl.acm.org/doi/10.1145/3319535.3345659) and [Cognicrypt](https://doi.org/10.1109/TSE.2019.2948910). You can refer to their repositories for setup instructions.
 
-Moreover, as we described in the paper, the rule set table in CryptoGuard paper doesn't match the output of CryptoGuard tool. To help future research on resolve this problem, we open source the [mapping table](data/cryptoguard_correction/cryptoguard_rules - Mapping Sheet.csv) to convert the output of CryptoGuard tool to the result table listed in our paper.
+Moreover, as we described in the paper, the rule set table in CryptoGuard paper doesn't match the output of CryptoGuard tool. To help future research on resolve this problem, we open source the [mapping table](data/cryptoguard_correction/cryptoguard_rules_mapping.csv) to convert the output of CryptoGuard tool to the result table listed in our paper.
 
 ## APK signature vulnerability analysis
 
