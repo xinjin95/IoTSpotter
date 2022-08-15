@@ -18,12 +18,12 @@ import json
 import argparse
 import traceback
 
-token_dict = {0: "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",
-              1: "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",
-              2: "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",
-              3: "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" }
+token_dict = {0: "xxxxxxxx",
+              1: "xxxxxxxx",
+              2: "xxxxxxxx",
+              3: "xxxxxxxx" }
 
-user_dict = {0: "xxxxxx95", 1: "autosign01", 2: "autosign02", 3: "autosign03"}
+user_dict = {0: "xxxxxx95", 1: "xxxxxxxx", 2: "xxxxxxxx", 3: "xxxxxxxx"}
 #
 lib_freq_path = "../third_party_library/data/lib_frequency.csv"
 
