@@ -74,7 +74,7 @@ You can find our annotated datasets under [data/dataset](data/dataset), where th
 
 ### 4. Mobile-IoT app classifiers
 
-For the mobile-IoT app classifiers, you can find the BiLSTM classifier [here](data/classifiers/bilstm.h5) and download the BERT model via this [link](https://drive.google.com/file/d/1D080URvXGGYAcg6TKX4RxLUPorKppY0i/view?usp=sharing).
+For the mobile-IoT app classifiers, you can find the BiLSTM classifier under [data/classifiers/](data/classifiers/bilstm.h5) and download the BERT model via this [link](https://drive.google.com/file/d/1D080URvXGGYAcg6TKX4RxLUPorKppY0i/view?usp=sharing).
 
 ### 5. IoT products and name entity recognition (NER) model
 
@@ -100,7 +100,7 @@ Then, install the `pip` package manager and other packages:
 
 ## Mobile-IoT classifier
 
-To train the BiLSTM classfier, you have to first download the pretrained word vectors from [Glove](https://nlp.stanford.edu/data/glove.6B.zip) and put the `glove.6B.300d.txt` file in this [folder](data/glove).
+To train the BiLSTM classfier, you have to first download the pretrained word vectors from [Glove](https://nlp.stanford.edu/data/glove.6B.zip) and put the `glove.6B.300d.txt` file under [data/glove/](data/glove).
 
 Commands to train the model:
 
@@ -163,7 +163,7 @@ Commands to run the maven repo crawler:
 
 `python maven_repo/large_scale_maven_crawler.py`
 
-After crawling a list of library jar files will be downloaded, you can identify the vulnerable libraries and related CVEs in this [folder](data/maven_crawling). we then use [LibScout](https://github.com/reddr/LibScout) to detect the vulnerable library usages. 
+After crawling a list of library jar files will be downloaded, you can identify the vulnerable libraries and related CVEs under [data/maven_crawling/](data/maven_crawling). we then use [LibScout](https://github.com/reddr/LibScout) to detect the vulnerable library usages. 
 
 ## Cryptograph-API misuse analysis
 
