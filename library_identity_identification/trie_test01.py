@@ -12,9 +12,6 @@
 
 from __future__ import absolute_import, division, print_function
 
-__author__ = 'Michal Nazarewicz <mina86@mina86.com>'
-__copyright__ = 'Copyright 2014 Google LLC'
-
 import os
 import stat
 import sys
