@@ -165,7 +165,7 @@ Commands to run the maven repo crawler:
 
 After crawling a list of library jar files will be downloaded, you can identify the vulnerable libraries and related CVEs under [data/maven_crawling/](data/maven_crawling). we then use [LibScout](https://github.com/reddr/LibScout) to detect the vulnerable library usages. 
 
-## Cryptograph-API misuse analysis
+## Cryptographic-API misuse analysis
 
 For crypto-API misuse analysis, we rely on the popular crypto analysis tools, [CryptoGuard](https://dl.acm.org/doi/10.1145/3319535.3345659) and [Cognicrypt](https://doi.org/10.1109/TSE.2019.2948910). You can refer to their repositories for setup instructions.
 
