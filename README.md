@@ -62,7 +62,7 @@ We provide the corpus and IoTSpotter identification results. Please don't distri
   "url": "https://play.google.com/store/apps/details?id=com.hiona.doodleit"
 }
 ```
-Since the total file size of all APKs of 37 mobile-IoT apps is more than 100GB, we recommand you to directly download them via [Androzoo](https://androzoo.uni.lu/). For the same APKs that we used for analysis, you can download them via Androzoo APIs with the [sha256 signatures](data/apk_androzoo_sha256/shared_sha256_androzoo.csv). 
+Since the total file size of all APKs of 37 mobile-IoT apps is more than 100GB, we recommend you to directly download them via [Androzoo](https://androzoo.uni.lu/). For the same APKs that we used for analysis, you can download them via Androzoo APIs with the [sha256 signatures](data/apk_androzoo_sha256/shared_sha256_androzoo.csv). 
 
 ### 2. 19K IoT specific package names
 
@@ -70,7 +70,7 @@ Our differential analysis component identifies 19K 3rd-party library package nam
 
 ### 3. Datasets of mobile-IoT app classifiers
 
-You can find our annotated datasets [here](data/dataset), where the `label` is 1 (IoT) and 0 (non-IoT). Part of the IoT app samples are from Wang'2019 USENIX Security paper, we obtained all their apps from this [link](http://seclab.soic.indiana.edu/xw48/iot_companion_appset.tar.gz). Then we removed the apps that were not in GPlay any more and obtained the rest apps for annotataion. And we provide the rest app list [here](data/artifacts/app_list.txt).
+You can find our annotated datasets under [data/dataset](data/dataset), where the `label` is 1 (IoT) and 0 (non-IoT). Part of the IoT app samples are from Wang'2019 USENIX Security paper, we obtained all their apps from this [link](http://seclab.soic.indiana.edu/xw48/iot_companion_appset.tar.gz). Then we removed the apps that were not in GPlay any more and obtained the remaining apps for annotataion. And we provide the remaining app list [here](data/artifacts/app_list.txt).
 
 ### 4. Mobile-IoT app classifiers
 
