@@ -186,7 +186,7 @@ cmd = f"apksigner verify --print-certs --verbose  -Werr {apk_path} | tee {result
 os.system(cmd)
 ```
 
-For more inferomation about `apksigner`, please refer to this [link](https://developer.android.com/studio/command-line/apksigner).
+For more information about `apksigner`, please refer to this [link](https://developer.android.com/studio/command-line/apksigner).
 
 To parse the detection results, we developed a function:
 
