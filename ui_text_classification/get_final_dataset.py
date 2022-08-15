@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: get_final_dataset.py
 @time: 4/26/21 6:48 PM

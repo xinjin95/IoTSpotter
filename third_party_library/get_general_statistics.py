@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: get_general_statistics.py
 @time: 8/21/21 10:23 PM
@@ -16,7 +16,7 @@ import glob
 import pandas as pd
 
 root_dir = "data/lib_results/"
-target_app_path = "../data/androzoo/description-improvement/xin_sunil_shared_pkgs.txt"
+target_app_path = "../data/androzoo/description-improvement/xxx_xxx_shared_pkgs.txt"
 general_statistics = "general_statistics/lib_cha_statistics.txt"
 
 

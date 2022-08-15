@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: ui_texts_feature_engineering.py
 @time: 4/15/21 7:00 PM
@@ -16,8 +16,8 @@ import os
 from iot_app_collector.text_processor import TextProcessor
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 
-iot_dir = "/home/xin/Documents/code/python/iot-measure/data/training_ui_info/iot/"
-non_iot_dir = "/home/xin/Documents/code/python/iot-measure/data/training_ui_info/non_iot/"
+iot_dir = "/home/xxx/Documents/code/python/iot-measure/data/training_ui_info/iot/"
+non_iot_dir = "/home/xxx/Documents/code/python/iot-measure/data/training_ui_info/non_iot/"
 
 tp = TextProcessor("")
 
@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
     df = pd.DataFrame({"iot_keyword": list(res_iot.keys()), "iot_tf_idf_avg": list(res_iot.values()),
                        "non_iot_keyword": list(res_non_iot.keys()), "non_iot_tf_idf_avg": list(res_non_iot.values())})
-    # df.to_csv("/home/xin/Documents/code/python/iot-measure/review_crawler/data/iot_UI_keywords.csv", index=False)
+    # df.to_csv("/home/xxx/Documents/code/python/iot-measure/review_crawler/data/iot_UI_keywords.csv", index=False)
 
     counter_vector = CountVectorizer(ngram_range=(1, 3), vocabulary=list(set(iot_keywords).difference(set(non_iot_keywords))))
     score = counter_vector.fit_transform(iot_texts).toarray()

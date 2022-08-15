@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: split_sp19_dataset.py
 @time: 3/5/21 1:32 PM
@@ -17,14 +17,14 @@ from sklearn.feature_extraction.text import CountVectorizer
 
 all_metadata_path = "../data/sp19_dataset/iot_app_metadata_sp19.txt"
 
-sunil_path = "../data/sp19_dataset/sunil_dataset.txt"
+xxx_path = "../data/sp19_dataset/xxx_dataset.txt"
 app_list_path = "../data/sp19_dataset/app_list.txt"
-# xin_path = "../data/sp19_dataset/xin_dataset.txt"
+# xxx_path = "../data/sp19_dataset/xxx_dataset.txt"
 # csv_path = "../data/sp19_dataset/annotation_csv.csv"
-# xin_path = "../data/iot_annotation/xin_dataset_from_above_3.txt"
+# xxx_path = "../data/iot_annotation/xxx_dataset_from_above_3.txt"
 # csv_path = "../data/iot_annotation/annotation_csv_from_above_3.csv"
 
-xin_path = "../data/non_iot_annotation/xin_dataset.txt"
+xxx_path = "../data/non_iot_annotation/xxx_dataset.txt"
 csv_path = "../data/non_iot_annotation/annotation_csv.csv"
 
 
@@ -42,15 +42,15 @@ def get_app_list():
 
 
 def split_dataset():
-    xin_file = open(xin_path, 'a+')
-    sunil_file = open(sunil_path, 'a+')
+    xxx_file = open(xxx_path, 'a+')
+    xxx_file = open(xxx_path, 'a+')
     with open(all_metadata_path, 'r') as src:
         for i, line in enumerate(src):
             line = line.strip('\n')
             if i < 787:
-                print(line, file=sunil_file)
+                print(line, file=xxx_file)
             else:
-                print(line, file=xin_file)
+                print(line, file=xxx_file)
 
 
 def build_dataset():
@@ -60,7 +60,7 @@ def build_dataset():
     tp = TextProcessor("")
     keywords = load_keywords()
     grams_list = []
-    with open(xin_path, 'r') as file:
+    with open(xxx_path, 'r') as file:
         for i, line in enumerate(file):
             if i > 2000:
                 continue

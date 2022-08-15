@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: package_name_line_parse_test.py
 @time: 6/29/21 1:04 PM

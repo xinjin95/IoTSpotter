@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: worker_local.py
 @time: 7/12/21 3:30 PM
@@ -17,7 +17,7 @@ from hashlib import sha256
 import traceback
 
 global msg
-# package_dir = "/users/PAS1888/zyueinfosec/xinjin/third_party_library/data/apks"
+# package_dir = "/users/PAS1888/zyueinfosec/xxxxxx/third_party_library/data/apks"
 package_dir = "data/apks"
 
 
@@ -48,12 +48,12 @@ def download_one_package(package_name):
 
 def analyze_one_app(pkg_name):
     global msg
-    # out_put_dir = "/users/PAS1888/zyueinfosec/xinjin/third_party_library/data/2M_lib_results/"
+    # out_put_dir = "/users/PAS1888/zyueinfosec/xxxxxx/third_party_library/data/2M_lib_results/"
     out_put_dir = os.getcwd() + "/data/2M_lib_results/"
-    # log_dir = "/users/PAS1888/zyueinfosec/xinjin/third_party_library/data/2M_lib_log/"
+    # log_dir = "/users/PAS1888/zyueinfosec/xxxxxx/third_party_library/data/2M_lib_log/"
     log_dir = os.getcwd() + "/data/2M_lib_log/"
     apk_path = os.getcwd() + "/data/apks/{}.apk".format(pkg_name)
-    # exe = Executor(work_path="/users/PAS1888/zyueinfosec/xinjin/third_party_library/jar_exe/")
+    # exe = Executor(work_path="/users/PAS1888/zyueinfosec/xxxxxx/third_party_library/jar_exe/")
     exe = Executor(work_path="jar_exe/")
     cmd = "java -jar LibScope.jar {} {} {}".format(apk_path,  out_put_dir, log_dir)
     exe.execute(cmd)

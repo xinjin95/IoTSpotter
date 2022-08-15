@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: exclude_common_libs.py
 @time: 6/25/21 11:57 PM
@@ -36,7 +36,7 @@ def create_trie(package_list):
 
 
 def main():
-    all_package_path = "/home/xin/Documents/code/python/iot-measure/third_party_library/data/lib_frequency.csv"
+    all_package_path = "/home/xxx/Documents/code/python/iot-measure/third_party_library/data/lib_frequency.csv"
     all_pkg_list = read_packages(all_package_path)
     all_pkg_list = list(set(all_pkg_list))
     print("Total # of 3rd-party-libs:", len(all_pkg_list))

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: collect_pure_non_iot_apps.py
 @time: 7/12/21 10:07 AM
@@ -13,13 +13,13 @@ import pandas as pd
 
 excluded_csv_path = "data/excluded_iot_shared_sha256.csv"
 save_csv_path = "data/pure_non_iot_sha256.csv"
-xin_pre_iot_path = "../data/androzoo/classification_result_iot_apps.txt"
-sunil_pre_iot_path = "../data/androzoo/sunil_iot_pkgs.txt"
-xin_new_iot_path = "../data/androzoo/description-improvement/classification_result_iot_apps.txt"
-sunil_new_iot_path = "../data/androzoo/description-improvement/after_sunil_labeling_58K_pkgs.txt"
+xxx_pre_iot_path = "../data/androzoo/classification_result_iot_apps.txt"
+xxx_pre_iot_path = "../data/androzoo/xxx_iot_pkgs.txt"
+xxx_new_iot_path = "../data/androzoo/description-improvement/classification_result_iot_apps.txt"
+xxx_new_iot_path = "../data/androzoo/description-improvement/after_xxx_labeling_58K_pkgs.txt"
 train_set_iot_path = "../data/final_dataset/pkg_list_800_added.txt"
 
-iot_paths = [xin_pre_iot_path, sunil_pre_iot_path, xin_new_iot_path, sunil_new_iot_path, train_set_iot_path]
+iot_paths = [xxx_pre_iot_path, xxx_pre_iot_path, xxx_new_iot_path, xxx_new_iot_path, train_set_iot_path]
 
 
 def collect_list(file_path):

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: master_local.py
 @time: 7/12/21 2:27 PM
@@ -90,7 +90,7 @@ def clear_finished_apks(finished_pkgs):
     #         app_removal.add(pkg)
     #     app_removal.add(dataFrame['sha256'][k])
     print("Should remove {} apps' apk files".format(len(app_removal)))
-    # package_dir = "/users/PAS1888/zyueinfosec/xinjin/third_party_library/data/apks/"
+    # package_dir = "/users/PAS1888/zyueinfosec/xxxxxx/third_party_library/data/apks/"
     package_dir = "data/apks/"
     _, _, filenames = next(os.walk(package_dir))
     for file_name in filenames:

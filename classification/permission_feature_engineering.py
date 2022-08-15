@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: permission_feature_engineering.py
 @time: 4/15/21 8:05 PM
@@ -17,8 +17,8 @@ import os
 from iot_app_collector.text_processor import TextProcessor
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 
-iot_dir = "/home/xin/Documents/code/python/iot-measure/data/training_ui_info/iot/"
-non_iot_dir = "/home/xin/Documents/code/python/iot-measure/data/training_ui_info/non_iot/"
+iot_dir = "/home/xxx/Documents/code/python/iot-measure/data/training_ui_info/iot/"
+non_iot_dir = "/home/xxx/Documents/code/python/iot-measure/data/training_ui_info/non_iot/"
 
 tp = TextProcessor("")
 
@@ -82,7 +82,7 @@ if __name__ == '__main__':
 
     # df = pd.DataFrame({"iot_keyword": list(res_iot.keys()), "iot_tf_ief_avg": list(res_iot.values()),
     #                    "non_iot_keyword": list(res_non_iot.keys()), "non_iot_avg": list(res_non_iot.values())})
-    # df.to_csv("/home/xin/Documents/code/python/iot-measure/review_crawler/data/permission_keywords.csv",
+    # df.to_csv("/home/xxx/Documents/code/python/iot-measure/review_crawler/data/permission_keywords.csv",
     #           index=False)
     for permission in list(set(iot_keywords).difference(set(non_iot_keywords))):
         print(permission)

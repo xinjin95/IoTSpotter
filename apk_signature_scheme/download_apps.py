@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: download_apps.py
 @time: 1/20/22 10:30 AM
@@ -16,8 +16,8 @@ import os
 import subprocess
 import time
 
-apk_dir = "/apks/apks/JinXin.2021.04"
-csv_path = "xin_sunil_shared_sha256_androzoo.csv"
+apk_dir = "/apks/apks/xxxxxx.2021.04"
+csv_path = "xxx_xxx_shared_sha256_androzoo.csv"
 
 num_threads = 20
 thread_ids = list(range(num_threads))

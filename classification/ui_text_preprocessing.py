@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: ui_text_preprocessing.py
 @time: 4/19/21 10:45 AM
@@ -25,8 +25,8 @@ validation_set_path = "../data/final_dataset/dataset_traditional/validation_set.
 testing_set_path = "../data/final_dataset/dataset_traditional/test_set.txt"
 
 
-iot_dir = "/home/xin/Documents/code/python/iot-measure/data/training_ui_info/iot/"
-non_iot_dir = "/home/xin/Documents/code/python/iot-measure/data/training_ui_info/non_iot/"
+iot_dir = "/home/xxx/Documents/code/python/iot-measure/data/training_ui_info/iot/"
+non_iot_dir = "/home/xxx/Documents/code/python/iot-measure/data/training_ui_info/non_iot/"
 
 
 def get_sets(file_path, app_set):

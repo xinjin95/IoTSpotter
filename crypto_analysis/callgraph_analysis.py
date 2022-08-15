@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: callgraph_analysis.py
 @time: 12/15/21 12:24 AM
@@ -138,11 +138,11 @@ iot_packages = set_iot_packages()
 
 
 def main():
-    file_path = "/home/xin/Documents/code/python/iot-measure/crypto_analysis/data/call_graph_analysis/iot_lib_apps.txt"
+    file_path = "/home/xxx/Documents/code/python/iot-measure/crypto_analysis/data/call_graph_analysis/iot_lib_apps.txt"
     # jar_path = "callGraphAnalzer.jar"
     jar_path = "callGraphAnalyzer_retrieve_call_chain.jar"
-    apk_dir = "/home/xin/Documents/project/iot_measurement/iot_lib_apps/"
-    exe = Executor(work_path="/home/xin/Documents/code/python/iot-measure/crypto_analysis/data/call_graph_analysis/")
+    apk_dir = "/home/xxx/Documents/project/iot_measurement/iot_lib_apps/"
+    exe = Executor(work_path="/home/xxx/Documents/code/python/iot-measure/crypto_analysis/data/call_graph_analysis/")
     with open(file_path, 'r') as f:
         for i, line in enumerate(f):
             # if i < 94: # com.lgeha.nuts

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: large_scale_scan.py
 @time: 8/3/21 1:43 PM
@@ -20,8 +20,8 @@ from concurrent.futures import ThreadPoolExecutor
 import time
 
 # target_app_path = "data/target_apps.txt"
-target_app_path = "/home/xin/Documents/code/python/iot-measure/library_scan/flowdroid/data/target_apps.txt"
-apk_dir = "/home/xin/Documents/project/iot_measurement/iot_lib_apps/"
+target_app_path = "/home/xxx/Documents/code/python/iot-measure/library_scan/flowdroid/data/target_apps.txt"
+apk_dir = "/home/xxx/Documents/project/iot_measurement/iot_lib_apps/"
 app_download_log_path = "data/app_download_log.txt"
 # app_download_log_path = "data/app_download_log.txt"
 # app_download_log_path = "data/app_download_log.txt"
@@ -56,7 +56,7 @@ def flowdroid_analysis_log(msg):
 
 def download_one_package(package_name):
     exe = Executor(work_path=apk_dir)
-    cmd = "wget -q http://164.107.119.61:8881/st2/apks/JinXin.2021.04/%s.apk" % package_name
+    cmd = "wget -q http://164.107.119.61:8881/st2/apks/xxxxxx.2021.04/%s.apk" % package_name
     exe.execute(cmd)
     app_path = apk_dir + package_name + ".apk"
     if os.path.exists(app_path):
@@ -79,9 +79,9 @@ def download_all_apks():
 
 
 def analyze_one_app(package_name):
-    flowdroid_jar_path = "/home/xin/Downloads/flowdroid/soot-infoflow-cmd-2.8.0-jar-with-dependencies.jar"
-    android_jar_path = "/home/xin/Documents/code/android/android-platforms/android-30/android.jar"
-    sink_file_path = "/home/xin/Downloads/flowdroid/sources_and_sinks.txt"
+    flowdroid_jar_path = "/home/xxx/Downloads/flowdroid/soot-infoflow-cmd-2.8.0-jar-with-dependencies.jar"
+    android_jar_path = "/home/xxx/Documents/code/android/android-platforms/android-30/android.jar"
+    sink_file_path = "/home/xxx/Downloads/flowdroid/sources_and_sinks.txt"
     apk_file_path = apk_dir + package_name + ".apk"
     xml_result_path = flowdroid_result_dir + package_name + '.xml'
     cmd = "java -jar {} -p {} -s {} -a {} -o {}".format(flowdroid_jar_path,
@@ -108,7 +108,7 @@ def download_failure_app():
                 failed_apps.append(pkg_name)
     print(f'# of failed apps: {len(failed_apps)}')
     failed_apps = set(failed_apps)
-    df = pd.read_csv("../../data/androzoo/description-improvement/xin_sunil_shared_sha256_androzoo.csv")
+    df = pd.read_csv("../../data/androzoo/description-improvement/xxx_xxx_shared_sha256_androzoo.csv")
     for i, pkg_name in enumerate(df["pkg_name"]):
         if pkg_name in failed_apps:
             sha = df["sha256"][i]
@@ -149,7 +149,7 @@ def analyze_app_test():
 def download_rest_apps():
     finished = set(get_app_list())
     rest_num = 0
-    with open("../../data/androzoo/description-improvement/xin_sunil_shared_pkgs.txt", 'r') as f:
+    with open("../../data/androzoo/description-improvement/xxx_xxx_shared_pkgs.txt", 'r') as f:
         for i, line in enumerate(f):
             app = line.strip('\n')
 
@@ -169,7 +169,7 @@ def download_rest_apps():
 def download_other_apps():
     finished = set(get_app_list())
     total = 0 # 27020 - 26368 = 652
-    df = pd.read_csv("../../data/androzoo/description-improvement/xin_sunil_shared_sha256_androzoo.csv")
+    df = pd.read_csv("../../data/androzoo/description-improvement/xxx_xxx_shared_sha256_androzoo.csv")
     for i, pkg_name in enumerate(df["pkg_name"]):
         app_path = apk_dir + pkg_name + ".apk"
         if not os.path.exists(app_path) and pkg_name not in finished:
@@ -220,7 +220,7 @@ def download_one_app_sha256(sha, pkg_name):
 
 def download_lib_apps():
     target_apps = set(get_app_list())
-    df = pd.read_csv("../../data/androzoo/description-improvement/xin_sunil_shared_sha256_androzoo.csv")
+    df = pd.read_csv("../../data/androzoo/description-improvement/xxx_xxx_shared_sha256_androzoo.csv")
     for i, pkg_name in enumerate(df["pkg_name"]):
         app_path = apk_dir + pkg_name + ".apk"
         sha_str = df["sha256"][i]
@@ -232,7 +232,7 @@ def download_lib_apps():
 
 
 def split_apps_into_groups():
-    root_dir = "/home/xin/Documents/project/iot_measurement/iot_rest_apps/"
+    root_dir = "/home/xxx/Documents/project/iot_measurement/iot_rest_apps/"
     files = glob.glob(root_dir + '*')
     for i, file in enumerate(files):
         dir_index = int(i / 2702)
@@ -244,7 +244,7 @@ def split_apps_into_groups():
 
 
 def inspect_split_res():
-    root_dir = "/home/xin/Documents/project/iot_measurement/iot_rest_apps/"
+    root_dir = "/home/xxx/Documents/project/iot_measurement/iot_rest_apps/"
     files = glob.glob(root_dir + '*')
     # dir_name, dirs, filenames = next(os.walk(root_dir))
     # print('')

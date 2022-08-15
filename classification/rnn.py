@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: rnn.py
 @time: 3/2/21 1:50 AM
@@ -68,7 +68,7 @@ def train_embedding():
     validation_sequences_padded = pad_sequences(validation_text_sequences, maxlen=padding_length)
 
     embedding_dimension = 300  # depends on which glove dictionary file used
-    glove_file = "/home/xin/Documents/data/glove.6B/glove.6B.%dd.txt" % embedding_dimension
+    glove_file = "/home/xxx/Documents/data/glove.6B/glove.6B.%dd.txt" % embedding_dimension
     glove_embedding = glove_dictionary_load(glove_dictionary_path=glove_file)
     embedding_matrix = np.zeros((number_frequent_words + 1, embedding_dimension))
     for index, word in vocabulary.items():

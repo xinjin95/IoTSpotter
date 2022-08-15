@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: collect_final_dataset.py
 @time: 3/22/21 3:37 PM
@@ -13,21 +13,21 @@ import json
 import random
 import pandas as pd
 
-path_sp19_xin = "../data/sp19_dataset/result/annotation_english_result_checked.txt"
-# path_sp19_xin_diff = ""
-path_above3_xin = "../data/iot_annotation/xin_annotation_from_above_3_checked.txt"
-path_non_iot_xin = "../data/non_iot_annotation/result/xin_dataset_annotation_confirmed.txt"
+path_sp19_xxx = "../data/sp19_dataset/result/annotation_english_result_checked.txt"
+# path_sp19_xxx_diff = ""
+path_above3_xxx = "../data/iot_annotation/xxx_annotation_from_above_3_checked.txt"
+path_non_iot_xxx = "../data/non_iot_annotation/result/xxx_dataset_annotation_confirmed.txt"
 
-path_sp19_sunil = "../data/sp19_dataset/result/sunil_labels_checked.json"
-# path_sp19_sunil_diff = ""
-path_above3_sunil = "../data/iot_annotation/sunil_dataset_from_above_3_checked.json"
-path_non_iot_sunil = "../data/non_iot_annotation/result/sunil_dataset_noniot_confirmed.json"
+path_sp19_xxx = "../data/sp19_dataset/result/xxx_labels_checked.json"
+# path_sp19_xxx_diff = ""
+path_above3_xxx = "../data/iot_annotation/xxx_dataset_from_above_3_checked.json"
+path_non_iot_xxx = "../data/non_iot_annotation/result/xxx_dataset_noniot_confirmed.json"
 
 path_package_list_save = "../data/final_dataset/package_label_list.csv"
 dids = set()
 
 
-def xin_annotation_result(file_path):
+def xxx_annotation_result(file_path):
     with open(path_package_list_save, 'a+') as des:
         with open(file_path, 'r') as file:
             for line in file:
@@ -41,7 +41,7 @@ def xin_annotation_result(file_path):
                     print("{},{}".format(pkg_name, label), file=des)
 
 
-def sunil_annotation_result(file_path):
+def xxx_annotation_result(file_path):
     src = open(file_path, 'r')
     lines = json.load(src)
     with open(path_package_list_save, 'a+') as des:
@@ -63,12 +63,12 @@ def sunil_annotation_result(file_path):
 
 
 def collect_all():
-    xin_annotation_result(path_sp19_xin)
-    xin_annotation_result(path_above3_xin)
-    xin_annotation_result(path_non_iot_xin)
-    sunil_annotation_result(path_sp19_sunil)
-    sunil_annotation_result(path_above3_sunil)
-    sunil_annotation_result(path_non_iot_sunil)
+    xxx_annotation_result(path_sp19_xxx)
+    xxx_annotation_result(path_above3_xxx)
+    xxx_annotation_result(path_non_iot_xxx)
+    xxx_annotation_result(path_sp19_xxx)
+    xxx_annotation_result(path_above3_xxx)
+    xxx_annotation_result(path_non_iot_xxx)
 
 
 def check_status():

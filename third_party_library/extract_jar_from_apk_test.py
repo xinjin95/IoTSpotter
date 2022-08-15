@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: extract_jar_from_apk_test.py
 @time: 8/1/21 6:17 PM
@@ -18,15 +18,15 @@ from utility.execution import Executor
 import glob
 import shutil
 
-apk_jar_dir = "/home/xin/Documents/code/python/iot-measure/third_party_library/data/jar_extraction/apk_jar/"
-src_file_path = "/home/xin/Documents/code/python/iot-measure/third_party_library/data/iot_specific_lib_app_name_mapping/app_lib_map.txt"
-apk_dir = "/home/xin/Documents/project/iot_measurement/iot_lib_apps/"
+apk_jar_dir = "/home/xxx/Documents/code/python/iot-measure/third_party_library/data/jar_extraction/apk_jar/"
+src_file_path = "/home/xxx/Documents/code/python/iot-measure/third_party_library/data/iot_specific_lib_app_name_mapping/app_lib_map.txt"
+apk_dir = "/home/xxx/Documents/project/iot_measurement/iot_lib_apps/"
 
 
 def extract_jar_from_apk(apk_path, jar_path):
     app_name = os.path.basename(apk_path)
     # jar_path = save_dir + app_name + ".jar"
-    exe = Executor(work_path="/home/xin/Documents/software/dex-tools-2.1-SNAPSHOT/")
+    exe = Executor(work_path="/home/xxx/Documents/software/dex-tools-2.1-SNAPSHOT/")
     cmd = "sh d2j-dex2jar.sh -f -o {} {}".format(jar_path, apk_path)
     # os.system(cmd)
     exe.execute(cmd)
@@ -201,7 +201,7 @@ def get_iot_specific_libs():
             js = json.loads(line)
             apps = apps.union(js["apps"])
     print(len(apps))
-    df = pd.read_csv("../data/androzoo/description-improvement/xin_sunil_shared_sha256_androzoo.csv")
+    df = pd.read_csv("../data/androzoo/description-improvement/xxx_xxx_shared_sha256_androzoo.csv")
     types = []
     for pkg_name in df["pkg_name"]:
         if pkg_name in apps:
@@ -209,7 +209,7 @@ def get_iot_specific_libs():
         else:
             types.append(0)
     df["with_iot_lib"] = types
-    df.to_csv("../data/androzoo/description-improvement/xin_sunil_shared_sha256_androzoo.csv", index=False)
+    df.to_csv("../data/androzoo/description-improvement/xxx_xxx_shared_sha256_androzoo.csv", index=False)
 
 def get_prefix(package_names):
     prefixs = set()

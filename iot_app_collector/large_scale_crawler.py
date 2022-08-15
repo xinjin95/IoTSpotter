@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: large_scale_crawler.py
 @time: 1/25/21 9:54 PM
@@ -26,7 +26,7 @@ executor = ThreadPoolExecutor(max_workers=thread_num)
 
 
 # pkg_name_path = "../data/androzoo/gplay_pkg_name.txt"
-pkg_name_path = "../data/androzoo/description-improvement/xin_sunil_shared_pkgs.txt"
+pkg_name_path = "../data/androzoo/description-improvement/xxx_xxx_shared_pkgs.txt"
 
 
 # test_apps = []

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: keyword_search.py
 @time: 6/21/21 10:11 AM
@@ -23,7 +23,7 @@ token_dict = {0: "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",
               2: "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",
               3: "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" }
 
-user_dict = {0: "xinjin95", 1: "autosign01", 2: "autosign02", 3: "autosign03"}
+user_dict = {0: "xxxxxx95", 1: "autosign01", 2: "autosign02", 3: "autosign03"}
 #
 lib_freq_path = "../third_party_library/data/lib_frequency.csv"
 

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: collect_target_app.py
 @time: 4/8/21 5:41 PM
@@ -11,10 +11,10 @@
 """
 import pandas as pd
 
-df = pd.read_csv("/home/xin/Documents/code/python/iot-measure/data/final_dataset/package_label_list.csv")
+df = pd.read_csv("/home/xxx/Documents/code/python/iot-measure/data/final_dataset/package_label_list.csv")
 
-sunil_list_path = "../data/androzoo/sunil_iot_pkgs.txt"
-xin_list_path = "../data/androzoo/classification_result_iot_apps.txt"
+xxx_list_path = "../data/androzoo/xxx_iot_pkgs.txt"
+xxx_list_path = "../data/androzoo/classification_result_iot_apps.txt"
 
 
 def load_apps(file_path):
@@ -26,10 +26,10 @@ def load_apps(file_path):
 
 
 training_apps = list(df["app_id"])
-sunil_apps = load_apps(sunil_list_path)
-xin_apps = load_apps(xin_list_path)
+xxx_apps = load_apps(xxx_list_path)
+xxx_apps = load_apps(xxx_list_path)
 
-all_apps = training_apps + sunil_apps + xin_apps
+all_apps = training_apps + xxx_apps + xxx_apps
 dids = set()
 with open("../androzoo_download/data/app_list.txt", 'w+') as file:
     for app in all_apps:

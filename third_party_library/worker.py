@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: worker.py
 @time: 6/12/21 11:42 PM
@@ -17,7 +17,7 @@ from hashlib import sha256
 import traceback
 
 global msg
-# package_dir = "/users/PAS1888/zyueinfosec/xinjin/third_party_library/data/apks"
+# package_dir = "/users/PAS1888/zyueinfosec/xxxxxx/third_party_library/data/apks"
 package_dir = "data/apks"
 
 # 创建类似的QueueManager:
@@ -62,11 +62,11 @@ def download_one_package(package_name, sha):
 
 def analyze_one_app(apk_path, pkg_name):
     global msg
-    # out_put_dir = "/users/PAS1888/zyueinfosec/xinjin/third_party_library/data/2M_lib_results/"
+    # out_put_dir = "/users/PAS1888/zyueinfosec/xxxxxx/third_party_library/data/2M_lib_results/"
     out_put_dir = "data/2M_lib_results/"
-    # log_dir = "/users/PAS1888/zyueinfosec/xinjin/third_party_library/data/2M_lib_log/"
+    # log_dir = "/users/PAS1888/zyueinfosec/xxxxxx/third_party_library/data/2M_lib_log/"
     log_dir = "data/2M_lib_log/"
-    # exe = Executor(work_path="/users/PAS1888/zyueinfosec/xinjin/third_party_library/jar_exe/")
+    # exe = Executor(work_path="/users/PAS1888/zyueinfosec/xxxxxx/third_party_library/jar_exe/")
     exe = Executor(work_path="jar_exe/")
     cmd = "java -jar LibScope.jar {} {} {}".format(apk_path,  out_put_dir, log_dir)
     exe.execute(cmd)
@@ -93,7 +93,7 @@ def main():
     task = m.get_task_queue()
     result = m.get_result_queue()
 
-    # app_csv_path = "data/xin_sunil_shared_sha256_androzoo.csv"
+    # app_csv_path = "data/xxx_xxx_shared_sha256_androzoo.csv"
     # df = pd.read_csv(app_csv_path)
 
     while True:

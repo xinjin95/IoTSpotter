@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: collect_inspection_result_600.py
 @time: 4/6/21 10:57 AM
@@ -12,8 +12,8 @@
 import pandas as pd
 import json
 
-sunil_annoataion_path = "../data/androzoo/random_300.json"
-xin_annotation_path = "../data/androzoo/iot_classification_inspection - unshared_inspection_csv.csv"
+xxx_annoataion_path = "../data/androzoo/random_300.json"
+xxx_annotation_path = "../data/androzoo/iot_classification_inspection - unshared_inspection_csv.csv"
 metadata_original_path = "../data/androzoo/600_inspection/600_metadata_original.txt"
 metadata_save_path = "../data/androzoo/600_inspection/600_metadata_with_label.txt"
 
@@ -22,9 +22,9 @@ def collect_annotated_list():
     labels = []
     app_ids = []
     sources = []
-    df = pd.read_csv(xin_annotation_path)
+    df = pd.read_csv(xxx_annotation_path)
     app_ids += list(df["pkg_name"])
-    with open(sunil_annoataion_path, 'r') as f:
+    with open(xxx_annoataion_path, 'r') as f:
         data = json.load(f)
         for js in data:
             app_ids.append(js["id"])
@@ -36,14 +36,14 @@ def collect_annotated_list():
 
 def add_label():
     app_dict = {}
-    df = pd.read_csv(xin_annotation_path)
+    df = pd.read_csv(xxx_annotation_path)
     for i, app_id in enumerate(df["pkg_name"]):
         label = df["manual_label"][i]
         label = int(label)
         source = df["Source"][i]
         source = str(source)
         app_dict[app_id] = {"label": label, "source": source}
-    with open(sunil_annoataion_path, 'r') as f:
+    with open(xxx_annoataion_path, 'r') as f:
         data = json.load(f)
         for js in data:
             app_id = js["id"]

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: parse_apks.py
 @time: 8/17/21 3:22 PM
@@ -28,7 +28,7 @@ lock = threading.Lock()
 
 
 def get_latest_jar():
-    jar_src_path = "/home/xin/Documents/code/java/manifestParser/out/artifacts/manifestParser_jar/manifestParser.jar"
+    jar_src_path = "/home/xxx/Documents/code/java/manifestParser/out/artifacts/manifestParser_jar/manifestParser.jar"
     cmd = "cp {} {}".format(jar_src_path, jar_path)
     os.system(cmd)
 
@@ -42,14 +42,14 @@ def parse_one_apk(apk_path):
 
 
 def parse_test():
-    # apk_path = "/home/xin/Documents/project/iot_measurement/apks/com.alarmnet.tc2.apk"
+    # apk_path = "/home/xxx/Documents/project/iot_measurement/apks/com.alarmnet.tc2.apk"
     # parse_one_apk(apk_path)
     package_name = "com.redison.senstrokeupdater"
     download_parse_one_app(package_name)
 
 
 def parse_local_apps():
-    root_dir = "/home/xin/Documents/project/iot_measurement/iot_rest_apps/"
+    root_dir = "/home/xxx/Documents/project/iot_measurement/iot_rest_apps/"
     files = glob.glob(root_dir + '*')
     apk_num = 0
     while len(files) > 0:
@@ -74,7 +74,7 @@ def parse_local_apps():
 
 def download_parse_one_app(package_name):
     download_one_package(package_name)
-    apk_dir = "/home/xin/Documents/project/iot_measurement/iot_lib_apps/"
+    apk_dir = "/home/xxx/Documents/project/iot_measurement/iot_lib_apps/"
     apk_path = apk_dir + package_name + '.apk'
     if os.path.exists(apk_path):
         get_apk_size(apk_path, package_name)
@@ -103,7 +103,7 @@ def get_apk_size(apk_path, app_name):
 
 
 def collect_app_size():
-    root_dir = "/home/xin/Documents/project/iot_measurement/iot_rest_apps/"
+    root_dir = "/home/xxx/Documents/project/iot_measurement/iot_rest_apps/"
     files = glob.glob(root_dir + '*')
     apk_num = 0
     while len(files) > 0:

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: get_all_iot_apps.py
 @time: 2/22/21 2:23 PM
@@ -130,7 +130,7 @@ def get_new_iot_apps(used_apps, len_non_iot):
     import pandas as pd
     iot_files = ["keyword_device-names.csv", "keyword_protocols.csv", "keyword_smarthome.csv",
                  "keyword_managers.csv", "keyword_regex.csv"]
-    iot_folder = "/home/xin/Downloads/keywords/"
+    iot_folder = "/home/xxx/Downloads/keywords/"
 
     new_iot_samples = []
     for file in iot_files:

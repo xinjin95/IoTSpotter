@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: collect_apps_containing_iot_libs.py
 @time: 8/2/21 11:32 PM
@@ -14,7 +14,7 @@ import json
 import os
 from classification.dictionary import Dictionary
 
-csv_path = "data/xin_sunil_shared_sha256_androzoo.csv"
+csv_path = "data/xxx_xxx_shared_sha256_androzoo.csv"
 iot_csv_paths = ["data/iot_specific_lib_filter/both_exist_filtered.csv",
                  "data/iot_specific_lib_filter/only_in_iot_filtered.csv"]
 
@@ -68,7 +68,7 @@ def map_package_name_with_app_name():
 def get_top_app_lib_mapping():
     iot_package_names = collect_iot_package_names()
     print(f'# of iot package names: {len(iot_package_names)}')
-    apps = open("/home/xin/Documents/code/python/iot-measure/crypto_analysis/data/call_graph_analysis/iot_lib_apps.txt", 'r').read().strip().split('\n')
+    apps = open("/home/xxx/Documents/code/python/iot-measure/crypto_analysis/data/call_graph_analysis/iot_lib_apps.txt", 'r').read().strip().split('\n')
     print(f"# of apps:{len(apps)}")
     with open("../crypto_analysis/data/iot_app_lib_mapping.txt", 'w') as f:
         for pkg_name in apps:

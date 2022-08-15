@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: review_feature_engineering.py
 @time: 4/15/21 6:12 PM
@@ -17,7 +17,7 @@ from iot_app_collector.text_processor import TextProcessor
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 # import pandas as pd
 
-review_file_path = "/home/xin/Documents/code/python/iot-measure/review_crawler/data/top_100_reviews_training.txt"
+review_file_path = "/home/xxx/Documents/code/python/iot-measure/review_crawler/data/top_100_reviews_training.txt"
 
 iot_texts = []
 non_iot_texts = []
@@ -64,11 +64,11 @@ def get_sorted_dict(keys, values):
 print("iot:", len(iot_texts))
 print("non iot", len(non_iot_texts))
 
-with open("/home/xin/Documents/code/python/iot-measure/review_crawler/data/iot_reviews.txt", 'w+') as des:
+with open("/home/xxx/Documents/code/python/iot-measure/review_crawler/data/iot_reviews.txt", 'w+') as des:
     for iot_text in iot_texts:
         print(iot_text, file=des)
 
-with open("/home/xin/Documents/code/python/iot-measure/review_crawler/data/non_iot_reviews.txt", 'w+') as des:
+with open("/home/xxx/Documents/code/python/iot-measure/review_crawler/data/non_iot_reviews.txt", 'w+') as des:
     for non_iot_text in non_iot_texts:
         print(non_iot_text, file=des)
 
@@ -91,7 +91,7 @@ print(non_iot_keywords)
 # df = pd.DataFrame({"iot_keyword": iot_keywords, "non_iot_keyword": non_iot_keywords})
 df = pd.DataFrame({"iot_keyword": list(res_iot.keys()), "iot_tf_idf_avg": list(res_iot.values()),
                     "non_iot_keyword": list(res_non_iot.keys()), "non_iot_tf_idf_avg": list(res_non_iot.values())})
-df.to_csv("/home/xin/Documents/code/python/iot-measure/review_crawler/data/iot_reviews_keywords_grouped.csv", index=False)
+df.to_csv("/home/xxx/Documents/code/python/iot-measure/review_crawler/data/iot_reviews_keywords_grouped.csv", index=False)
 
 counter_vector = CountVectorizer(ngram_range=(1, 3), vocabulary=list(set(iot_keywords).difference(set(non_iot_keywords))))
 score = counter_vector.fit_transform(iot_texts).toarray()

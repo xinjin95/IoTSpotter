@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: split_validation.py
 @time: 10/19/21 8:17 PM
@@ -11,7 +11,7 @@
 """
 import json
 
-finished_path = "../data/validation/sunil_finished_500.json"
+finished_path = "../data/validation/xxx_finished_500.json"
 src_metadata_path = "../data/androzoo/description-improvement/4K_shared_from_37K_metadata.txt"
 todo_path = "../data/validation/todo_3500.txt"
 
@@ -39,8 +39,8 @@ def main():
                 print(json.dumps(res), file=des)
 
 def split():
-    paths = ["xin.txt", "sunil.txt", "kaushal.txt"]
-    paths = ["xin.txt", "sunil.txt"]
+    paths = ["xxx.txt", "xxx.txt", "kaushal.txt"]
+    paths = ["xxx.txt", "xxx.txt"]
     with open(todo_path, 'r') as f:
         for i, line in enumerate(f):
             i = i % 2

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: collect_iot_lib_apps.py
 @time: 12/14/21 10:38 PM
@@ -12,7 +12,7 @@
 import json
 import os.path
 
-apk_dir = "/home/xin/Documents/project/iot_measurement/iot_lib_apps/"
+apk_dir = "/home/xxx/Documents/project/iot_measurement/iot_lib_apps/"
 
 def get_lib_apps():
     iot_lib_app_path = "data/call_graph_analysis/iot_lib_apps.txt"

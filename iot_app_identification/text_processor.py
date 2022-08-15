@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: text_processor.py
 @time: 3/26/20 1:03 AM
@@ -177,7 +177,7 @@ def glove_dictionary_load(glove_dictionary_path=None):
     """
     import numpy as np
     if glove_dictionary_path is None:
-        glove_dictionary_path = "/home/xin/Documents/data/glove.6B/glove.6B.50d.txt"
+        glove_dictionary_path = "/home/xxx/Documents/data/glove.6B/glove.6B.50d.txt"
 
     with open(glove_dictionary_path, encoding='utf-8') as file:
         content = file.readlines()

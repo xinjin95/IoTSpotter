@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: calculate_apk_size.py
 @time: 8/19/21 3:45 PM
@@ -62,8 +62,8 @@ def get_all_sizes():
 
 
 def get_big_range_iot_pkgs():
-    files = ["../data/androzoo/description-improvement/xin_sunil_shared_pkgs.txt",
-             "../data/androzoo/description-improvement/xin_sunil_non_shared_pkgs.txt"]
+    files = ["../data/androzoo/description-improvement/xxx_xxx_shared_pkgs.txt",
+             "../data/androzoo/description-improvement/xxx_xxx_non_shared_pkgs.txt"]
     visited = set()
     with open("../data/androzoo/description-improvement/iot_pkgs_big_range.txt", 'a+') as des:
         for file in files:
@@ -83,7 +83,7 @@ def get_big_range_iot_pkgs():
 
 def get_iot_apps():
     res = set()
-    with open("../data/androzoo/description-improvement/xin_sunil_shared_pkgs.txt", 'r') as f:
+    with open("../data/androzoo/description-improvement/xxx_xxx_shared_pkgs.txt", 'r') as f:
         for line in f:
             res.add(line.strip('\n'))
     return res

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: check_scheme.py
 @time: 1/19/22 6:13 PM
@@ -15,10 +15,10 @@ import pandas as pd
 import glob
 import subprocess
 
-# apk_dir = "/home/xin/Documents/project/iot_measurement/iot_lib_apps/"
-apk_dir = "/home/xin/Documents/project/iot_measurement/lib_update_apks/"
-app_list_csv = "/home/xin/Documents/code/python/iot-measure/data/androzoo/description-improvement/shared_37K_pkg_download_rank.csv"
-result_dir = "/home/xin/Documents/code/python/iot-measure/apk_signature_scheme/data/apksigner_results"
+# apk_dir = "/home/xxx/Documents/project/iot_measurement/iot_lib_apps/"
+apk_dir = "/home/xxx/Documents/project/iot_measurement/lib_update_apks/"
+app_list_csv = "/home/xxx/Documents/code/python/iot-measure/data/androzoo/description-improvement/shared_37K_pkg_download_rank.csv"
+result_dir = "/home/xxx/Documents/code/python/iot-measure/apk_signature_scheme/data/apksigner_results"
 
 class Executor(object):
 
@@ -105,7 +105,7 @@ def get_finished():
         file = os.path.basename(file)[:-4]
         res.add(file)
     print(f"Finished: {len(res)}")
-    with open("/home/xin/Documents/code/python/iot-measure/apk_signature_scheme/data/finished_apps.txt", 'w') as f:
+    with open("/home/xxx/Documents/code/python/iot-measure/apk_signature_scheme/data/finished_apps.txt", 'w') as f:
         for app in res:
             print(app, file=f)
     return res
@@ -130,7 +130,7 @@ def local_parse():
 
 def download_one_app(package_name):
     exe = Executor(work_path=apk_dir)
-    cmd = f"wget -q http://164.107.119.61:8882/storage2/apks/JinXin.2021.04/{package_name}.apk"
+    cmd = f"wget -q http://164.107.119.61:8882/storage2/apks/xxxxxx.2021.04/{package_name}.apk"
     exe.execute(cmd)
 
 def remote_parse():

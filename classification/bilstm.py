@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: bilstm.py
 @time: 3/2/21 2:28 AM
@@ -61,7 +61,7 @@ def glove_dictionary_load(glove_dictionary_path=None):
     :return: dictionary of word embedding
     """
     if glove_dictionary_path is None:
-        # glove_dictionary_path = "/home/xin/Documents/data/glove.6B/glove.6B.50d.txt"
+        # glove_dictionary_path = "/home/xxx/Documents/data/glove.6B/glove.6B.50d.txt"
         glove_dictionary_path = "../data/glove/glove.6B.300d.txt"
 
     with open(glove_dictionary_path, encoding='utf-8') as file:
@@ -127,7 +127,7 @@ def train_embedding():
     validation_sequences_padded = pad_sequences(validation_text_sequences, maxlen=padding_length)
 
     embedding_dimension = 300  # depends on which glove dictionary file used
-    # glove_file = "/home/xin/Documents/data/glove.6B/glove.6B.%dd.txt" % embedding_dimension
+    # glove_file = "/home/xxx/Documents/data/glove.6B/glove.6B.%dd.txt" % embedding_dimension
     glove_file = "../data/glove/glove.6B.%dd.txt" % embedding_dimension
     glove_embedding = glove_dictionary_load(glove_dictionary_path=glove_file)
     embedding_matrix = np.zeros((number_frequent_words + 1, embedding_dimension))

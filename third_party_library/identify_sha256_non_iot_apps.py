@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: identify_sha256_non_iot_apps.py
 @time: 7/9/21 10:45 PM
@@ -12,7 +12,7 @@
 import pandas as pd
 from app_url_collector.download_latest_csv import get_old_file
 
-exclude_pkg_path = "../data/androzoo/description-improvement/xin_sunil_shared_pkgs.txt"
+exclude_pkg_path = "../data/androzoo/description-improvement/xxx_xxx_shared_pkgs.txt"
 save_path = "../data/androzoo/all_pkg_sha256.txt"
 all_218K_pkg_name_path = "../data/androzoo/all_2182654_pkg_names.txt"
 excluded_sha256_path = "data/excluded_iot_shared_sha256.csv"

@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: collect_non_iot_label_result.py
 @time: 3/22/21 10:44 AM
@@ -11,8 +11,8 @@
 """
 import pandas as pd
 import json
-file_path = "../data/non_iot_annotation/result/xin_dataset_labeled.csv"
-file_save_path = "../data/non_iot_annotation/result/xin_dataset_need_confirm.txt"
+file_path = "../data/non_iot_annotation/result/xxx_dataset_labeled.csv"
+file_save_path = "../data/non_iot_annotation/result/xxx_dataset_need_confirm.txt"
 
 
 def get_json_file():

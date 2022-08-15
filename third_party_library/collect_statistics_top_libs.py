@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: collect_statistics_top_libs.py
 @time: 8/24/21 11:10 PM
@@ -27,11 +27,11 @@ def get_libs() -> list:
 
 def get_target_apps():
     apps = set()
-    df = pd.read_csv("../data/androzoo/description-improvement/xin_sunil_shared_sha256_androzoo.csv")
+    df = pd.read_csv("../data/androzoo/description-improvement/xxx_xxx_shared_sha256_androzoo.csv")
     for i, with_iot_lib in enumerate(df["with_iot_lib"]):
         if with_iot_lib == 1:
             apps.add(df["pkg_name"][i])
-    # with open("../data/androzoo/description-improvement/xin_sunil_shared_sha256_androzoo.csv", 'r') as f:
+    # with open("../data/androzoo/description-improvement/xxx_xxx_shared_sha256_androzoo.csv", 'r') as f:
     #     for line in f:
     #         js = json.loads(line)
     #         with_iot_lib = js["with_iot_lib"]
@@ -109,7 +109,7 @@ def collect_popularity():
 
 def check_tutk():
     pkg_name = "com.tutk"
-    jar_files = glob.glob("/home/xin/Documents/code/python/iot-measure/mvncrawler/maven/tuya/jars/*")
+    jar_files = glob.glob("/home/xxx/Documents/code/python/iot-measure/mvncrawler/maven/tuya/jars/*")
     for jar_file in jar_files:
         try:
             if not jar_file.endswith('.jar'):

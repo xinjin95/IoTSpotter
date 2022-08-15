@@ -563,7 +563,7 @@ com.getsafe.homesecurity
 com.ecoventsystems.ecovent
 eu.mobile_alerts.weatherhub
 com.shalimar
-com.huasharp.jinan
+com.huasharp.xxxan
 com.intesis.intesishome
 com.hoboman313.huegasm
 com.echo.doorlocker
@@ -1106,7 +1106,7 @@ com.vng.inputmethod.labankey
 com.satechi.meterplug
 connectappzone.remotefortv
 com.shenzhen.android.orbit
-com.xenon.jinvoo
+com.xenon.xxxvoo
 com.sensornetworks.smartgeyser
 com.hichip
 com.crevavi.remoteswitch.application
@@ -1140,7 +1140,7 @@ com.telldus.live.mobile
 com.termatrac.t3i.operate
 com.kraftwerk9.sharprc
 com.elitech.rb
-com.jingjia.maginon
+com.xxxgjia.maginon
 vandelay.lokly_appli_mobile
 com.ryan.wifi
 com.dreamwalker.sleeper

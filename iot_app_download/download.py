@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: download.py
 @time: 4/8/21 5:55 PM
@@ -24,11 +24,11 @@ lock = threading.Lock()
 thread_num = 30
 executor = ThreadPoolExecutor(max_workers=thread_num)
 lock_error = threading.Lock()
-apk_path = "/storage2/apks/JinXin.2021.04/"
+apk_path = "/storage2/apks/xxxxxx.2021.04/"
 # apk_path = "data/"
 
 
-# def execute(cmd, cwd="/storage2/apks/JinXin.2021.04/"):
+# def execute(cmd, cwd="/storage2/apks/xxxxxx.2021.04/"):
 def execute(cmd, cwd=apk_path):
     process = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, shell=True, cwd=cwd)
     process.wait()

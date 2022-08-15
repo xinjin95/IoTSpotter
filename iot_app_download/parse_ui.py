@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: parse_ui.py
 @time: 4/9/21 1:13 PM
@@ -17,11 +17,11 @@ import argparse
 import os
 
 
-apk_path = "/home/xin/Documents/iot_app_download/data/apk/"
-ui_info_path = "/home/xin/Documents/iot_app_download/data/ui_info/"
-jar_path = "/home/xin/Documents/iot_app_download/data/parser/LayoutAnalyzer.jar"
-jar_dependency_path = "/home/xin/Documents/iot_app_download/data/parser/"
-log_path = "/home/xin/Documents/iot_app_download/data/parse_log.txt"
+apk_path = "/home/xxx/Documents/iot_app_download/data/apk/"
+ui_info_path = "/home/xxx/Documents/iot_app_download/data/ui_info/"
+jar_path = "/home/xxx/Documents/iot_app_download/data/parser/LayoutAnalyzer.jar"
+jar_dependency_path = "/home/xxx/Documents/iot_app_download/data/parser/"
+log_path = "/home/xxx/Documents/iot_app_download/data/parse_log.txt"
 lock = threading.Lock()
 thread_num = 5
 executor = ThreadPoolExecutor(max_workers=thread_num)
@@ -33,7 +33,7 @@ def execute(cmd, cwd=apk_path):
 
 
 def download_app(pkg_name):
-    cmd = "wget -q http://164.107.119.61:8881/st2/apks/JinXin.2021.04/{}.apk".format(pkg_name)
+    cmd = "wget -q http://164.107.119.61:8881/st2/apks/xxxxxx.2021.04/{}.apk".format(pkg_name)
     execute(cmd, cwd=apk_path)
 
 

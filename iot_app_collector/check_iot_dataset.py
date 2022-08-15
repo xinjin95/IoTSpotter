@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: check_iot_dataset.py
 @time: 5/10/21 5:44 PM
@@ -23,7 +23,7 @@ def check_apps(file_path):
     with open(file_path, 'r') as file:
         for line in file:
             js = json.loads(line)
-            note = js["sunil_notes"]
+            note = js["xxx_notes"]
             if len(note) != 0:
                 print(js["description"])
                 print(js["label"])

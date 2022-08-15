@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: debug_logistic_model.py
 @time: 4/19/21 9:06 PM
@@ -54,8 +54,8 @@ def sample_dataset():
 
 def split_dataset():
     all_1K_path = "../data/ui_text_dataset/annotation/all_1K.csv"
-    xin_path = "../data/ui_text_dataset/annotation/xin.csv"
-    sunil_path = "../data/ui_text_dataset/annotation/sunil.csv"
+    xxx_path = "../data/ui_text_dataset/annotation/xxx.csv"
+    xxx_path = "../data/ui_text_dataset/annotation/xxx.csv"
     df = pd.read_csv(all_1K_path)
     texts = []
     labels = []
@@ -66,7 +66,7 @@ def split_dataset():
             labels.append(1)
             pkg_names.append(df["pkg_name"][i])
     df = pd.DataFrame.from_dict({"ui_text": texts, "label": labels, "pkg_name": pkg_names})
-    df.to_csv(xin_path, index=False)
+    df.to_csv(xxx_path, index=False)
 
 
 if __name__ == '__main__':

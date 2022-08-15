@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: crypto_validation.py
 @time: 1/14/22 7:10 PM
@@ -100,7 +100,7 @@ class Executor(object):
             # TODO: add lib_log
 
 def check_existence():
-    apk_dir = "/home/xin/Documents/project/iot_measurement/iot_lib_apps/"
+    apk_dir = "/home/xxx/Documents/project/iot_measurement/iot_lib_apps/"
     for app in selected_apks:
         apk_path = apk_dir + app + '.apk'
         if not os.path.exists(apk_path):
@@ -108,11 +108,11 @@ def check_existence():
 
 
 def main():
-    # file_path = "/home/xin/Documents/code/python/iot-measure/crypto_analysis/data/call_graph_analysis/iot_lib_apps.txt"
+    # file_path = "/home/xxx/Documents/code/python/iot-measure/crypto_analysis/data/call_graph_analysis/iot_lib_apps.txt"
     # jar_path = "callGraphAnalzer.jar"
     jar_path = "cryptoValidation.jar"
-    apk_dir = "/home/xin/Documents/project/iot_measurement/iot_lib_apps/"
-    exe = Executor(work_path="/home/xin/Documents/code/python/iot-measure/crypto_analysis/data/call_graph_analysis/")
+    apk_dir = "/home/xxx/Documents/project/iot_measurement/iot_lib_apps/"
+    exe = Executor(work_path="/home/xxx/Documents/code/python/iot-measure/crypto_analysis/data/call_graph_analysis/")
     # with open(file_path, 'r') as f:
     for i, pkg_name in enumerate(selected_apks):
         # if i < 94: # com.lgeha.nuts
@@ -132,10 +132,10 @@ def split_result():
                 del js['IOT_PRODUCT']
                 pkg_name = js['app_name']
                 if 'cryptoguard' in file:
-                    with open(f"data/call_graph_analysis/sunil_validation/cryptoguard/{pkg_name}.json", 'w+') as des:
+                    with open(f"data/call_graph_analysis/xxx_validation/cryptoguard/{pkg_name}.json", 'w+') as des:
                         json.dump(js, des)
                 else:
-                    with open(f"data/call_graph_analysis/sunil_validation/cognicrypt/{pkg_name}.json", 'w+') as des:
+                    with open(f"data/call_graph_analysis/xxx_validation/cognicrypt/{pkg_name}.json", 'w+') as des:
                         json.dump(js, des)
 
 if __name__ == '__main__':

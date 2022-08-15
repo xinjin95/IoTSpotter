@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: analyze_static_results.py
 @time: 6/14/21 11:50 PM
@@ -15,7 +15,7 @@ import os
 import numpy as np
 from app_url_collector.dictionary import Dictionary
 
-csv_path = "data/xin_sunil_shared_sha256_androzoo.csv"
+csv_path = "data/xxx_xxx_shared_sha256_androzoo.csv"
 
 
 def get_stats_per_app(result_path):

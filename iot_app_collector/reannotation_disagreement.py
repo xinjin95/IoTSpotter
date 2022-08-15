@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: reannotation_disagreement.py
 @time: 11/8/21 2:03 PM
@@ -12,7 +12,7 @@
 import pandas as pd
 
 
-raw_path = "../data/re_annotation_trainingset/xin_new_annotation_sunil_annotated.csv"
+raw_path = "../data/re_annotation_trainingset/xxx_new_annotation_xxx_annotated.csv"
 
 def get_app_disagreed(df):
     res = set()
@@ -35,7 +35,7 @@ def main():
     print("# of apps", len(apps))
     df = df[df["pkg_name"].isin(apps)]
     # print(df.head())
-    df.to_csv("../data/re_annotation_trainingset/disagreement/xin_disagree_with_sunil.csv", index=False)
+    df.to_csv("../data/re_annotation_trainingset/disagreement/xxx_disagree_with_xxx.csv", index=False)
 
 if __name__ == '__main__':
     main()

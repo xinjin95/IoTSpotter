@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: parse_result.py
 @time: 1/19/22 9:49 PM
@@ -17,9 +17,9 @@ import pandas as pd
 
 from check_scheme import result_dir, get_finished, app_list_csv
 
-finished_list = "/home/xin/Documents/code/python/iot-measure/apk_signature_scheme/data/finished_apps.txt"
-csv_result_path = "/home/xin/Documents/code/python/iot-measure/apk_signature_scheme/data/scheme_result.csv"
-mini_sdk_json = "/home/xin/Documents/code/python/iot-measure/data/androzoo/description-improvement/new_shared_37K_mini_sdk.json"
+finished_list = "/home/xxx/Documents/code/python/iot-measure/apk_signature_scheme/data/finished_apps.txt"
+csv_result_path = "/home/xxx/Documents/code/python/iot-measure/apk_signature_scheme/data/scheme_result.csv"
+mini_sdk_json = "/home/xxx/Documents/code/python/iot-measure/data/androzoo/description-improvement/new_shared_37K_mini_sdk.json"
 
 
 def parse_one_app(file_path):
@@ -51,16 +51,16 @@ def parse_one_app(file_path):
 
 def get_mini_sdk():
 
-    mini_sdk_json = "/home/xin/Documents/code/python/iot-measure/data/androzoo/description-improvement/new_shared_37K_mini_sdk.json"
+    mini_sdk_json = "/home/xxx/Documents/code/python/iot-measure/data/androzoo/description-improvement/new_shared_37K_mini_sdk.json"
     # res = {}
-    # metadata_path = "/home/xin/Documents/code/python/iot-measure/data/androzoo/description-improvement/new_shared_37K_metadata.txt"
+    # metadata_path = "/home/xxx/Documents/code/python/iot-measure/data/androzoo/description-improvement/new_shared_37K_metadata.txt"
     # with open(metadata_path, 'r') as f:
     #     for line in f:
     #         js = json.loads(line)
     #         mini_sdk = js['required_android_version']
     #         res[js['app_id']] = mini_sdk
 
-    files = glob.glob("/home/xin/Documents/code/python/iot-measure/third_party_library/data/lib_results/*")
+    files = glob.glob("/home/xxx/Documents/code/python/iot-measure/third_party_library/data/lib_results/*")
     parsed_res = {}
     for i, file in enumerate(files):
         print(i)

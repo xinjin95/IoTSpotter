@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: Xin Jin
+@author: xxx xxx
 @license: (C) Copyright 2013-2019.
-@contact: xin.jin0010@gmail.com
+@contact: xxx.xxx0010@gmail.com
 @software: pycharm
 @file: collect_metadata_info.py
 @time: 8/10/21 3:40 PM
@@ -13,7 +13,7 @@ import json
 import os
 import pandas as pd
 
-app_list_path = "../data/androzoo/description-improvement/xin_sunil_shared_pkgs.txt"
+app_list_path = "../data/androzoo/description-improvement/xxx_xxx_shared_pkgs.txt"
 metadata_path = "../data/androzoo/description-improvement/new_shared_37K_metadata.txt"
 
 save_path = "data/iot_general_info.csv"
