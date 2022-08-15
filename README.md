@@ -12,7 +12,7 @@ We provide the corpus and IoTSpotter identification results. Please don't distri
 
 ### 1. 37K mobile-IoT apps
 
-37K mobile-IoT apps are listed in this [file](data/apk_androzoo_sha256/xin_sunil_shared_sha256_androzoo.csv). The metadata of our identified 37K IoT apps is [here](https://drive.google.com/file/d/1Fq4sGUpEuU7EPnZuxMMCZdWlBXjDD8wN/view?usp=sharing). Each line of the metadata file is a json object, e.g.,
+37K mobile-IoT apps are listed in this [file](data/apk_androzoo_sha256/shared_sha256_androzoo.csv). The metadata of our identified 37K IoT apps is [here](https://drive.google.com/file/d/1Fq4sGUpEuU7EPnZuxMMCZdWlBXjDD8wN/view?usp=sharing). Each line of the metadata file is a json object, e.g.,
 ```json
 {
   "title": "Doodle It - Pictionary for your Chromecast",
@@ -62,7 +62,7 @@ We provide the corpus and IoTSpotter identification results. Please don't distri
   "url": "https://play.google.com/store/apps/details?id=com.hiona.doodleit"
 }
 ```
-Since the total file size of all APKs of 37 mobile-IoT apps is more than 100GB, we recommand you to directly download them via [Androzoo](https://androzoo.uni.lu/). For the same APKs that we used for analysis, you can download them via Androzoo APIs with the [sha256 signatures](data/apk_androzoo_sha256/xin_sunil_shared_sha256_androzoo.csv). 
+Since the total file size of all APKs of 37 mobile-IoT apps is more than 100GB, we recommand you to directly download them via [Androzoo](https://androzoo.uni.lu/). For the same APKs that we used for analysis, you can download them via Androzoo APIs with the [sha256 signatures](data/apk_androzoo_sha256/shared_sha256_androzoo.csv). 
 
 ### 2. 19K IoT specific package names
 
