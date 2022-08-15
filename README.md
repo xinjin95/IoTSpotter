@@ -74,7 +74,7 @@ You can find our annotated datasets under [data/dataset](data/dataset), where th
 
 ### 4. Mobile-IoT app classifiers
 
-For the mobile-IoT app classifiers, you can find the BiLSTM classifier under [data/classifiers/](data/classifiers/bilstm.h5) and download the BERT model via this [link](https://drive.google.com/file/d/1D080URvXGGYAcg6TKX4RxLUPorKppY0i/view?usp=sharing).
+For the mobile-IoT app classifiers, you can find the BiLSTM classifier under [data/classifiers/](data/classifiers/bilstm.h5) and download the BERT model via this [link](https://drive.google.com/drive/folders/1qzGOPXfE4FLZRfF0GoL1iFdfazwvGGlf?usp=sharing).
 
 ### 5. IoT products and name entity recognition (NER) model
 
@@ -116,7 +116,7 @@ To classify model, run the following commands:
 
 `python classification.py`
 
-For the BERT model, we provide the script and instructions along with the classifier via this [link](https://drive.google.com/file/d/1D080URvXGGYAcg6TKX4RxLUPorKppY0i/view?usp=sharing).
+For the BERT model, we provide the script and instructions along with the classifier via this [link](https://drive.google.com/drive/folders/1qzGOPXfE4FLZRfF0GoL1iFdfazwvGGlf?usp=sharing).
 
 
 ## IoT product NER model
