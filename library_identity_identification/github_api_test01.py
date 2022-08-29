@@ -11,13 +11,13 @@
 """
 from github import Github
 
-token_dict = {"xxxxxx95": "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",
-              "autosign01": "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",
-              "autosign02": "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",
-              "autosign03": "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"}
+token_dict = {"xxxxxx95": "xxxxxx",
+              "xxxxxx": "xxxxxx",
+              "xxxxxx": "xxxxxx",
+              "xxxxxx": "xxxxxx"}
 
 
-g = Github("autosign01", "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")
+g = Github("xxxxxx", "xxxxxx")
 print(g.get_rate_limit())
 user = g.get_user("xxxxxx95")
 # g = Github(base_url="https://{hostname}/api/v3", login_or_token="access_token")

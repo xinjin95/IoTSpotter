@@ -39,7 +39,7 @@ def main():
                 print(json.dumps(res), file=des)
 
 def split():
-    paths = ["xxx.txt", "xxx.txt", "kaushal.txt"]
+    paths = ["xxx.txt", "xxx.txt", "xxxx.txt"]
     paths = ["xxx.txt", "xxx.txt"]
     with open(todo_path, 'r') as f:
         for i, line in enumerate(f):
