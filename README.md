@@ -1,4 +1,6 @@
-# IoTSpotter：Understanding IoT Security from a Market-Scale Perspective
+# IoTSpotter Artifact
+
+Understanding IoT Security from a Market-Scale Perspective
 
 ## Introduction
 
