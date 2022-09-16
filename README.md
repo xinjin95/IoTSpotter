@@ -8,6 +8,26 @@ IoTSpotter is a tool for automatically identifying mobile-IoT apps, IoT specific
 
 <p align="center"><img src="figure/iotspotter.PNG" alt="workflow" width="800"></p>
 
+## Table of Contents
+- [IoTSpotter Artifact](#iotspotter-artifact)
+  - [Introduction](#introduction)
+  - [Table of Contents](#table-of-contents)
+  - [Data Release](#data-release)
+    - [1. 37K mobile-IoT apps](#1-37k-mobile-iot-apps)
+    - [2. 19K IoT specific package names](#2-19k-iot-specific-package-names)
+    - [3. Datasets of mobile-IoT app classifiers](#3-datasets-of-mobile-iot-app-classifiers)
+    - [4. Mobile-IoT app classifiers](#4-mobile-iot-app-classifiers)
+    - [5. IoT products and name entity recognition (NER) model](#5-iot-products-and-name-entity-recognition-ner-model)
+  - [Installation](#installation)
+  - [Mobile-IoT classifier](#mobile-iot-classifier)
+  - [IoT product NER model](#iot-product-ner-model)
+  - [IoT library vulnerability analysis](#iot-library-vulnerability-analysis)
+    - [1. Crawl IoT Specific Libraries from Maven Repository](#1-crawl-iot-specific-libraries-from-maven-repository)
+  - [Cryptographic-API misuse analysis](#cryptographic-api-misuse-analysis)
+  - [APK signature vulnerability analysis](#apk-signature-vulnerability-analysis)
+  - [CDF](#cdf)
+  - [Bug Report](#bug-report)
+
 ## Data Release
 
 We provide the corpus and IoTSpotter identification results. Please don't distribute them. We will open source them to the public after the paper is published.
@@ -175,7 +195,9 @@ Moreover, as we described in the paper, the rule set table in CryptoGuard paper 
 
 ## APK signature vulnerability analysis
 
-We rely on Apksigner to identify Janus vulnerabilities. The basic commands for detecting the vulnerabilities are:
+We rely on Apksigner to identify Janus vulnerabilities. The apksigner tool is available in revision 24.0.3 and higher of the Android SDK Build Tools.
+
+The basic commands for detecting the vulnerabilities are:
 
 ```python
 import os
@@ -193,9 +215,15 @@ For more information about `apksigner`, please refer to this [link](https://deve
 To parse the detection results, we developed a function:
 
 ```python
-def parse_one_app(file_path): # file_path is the path to the detection result file
+def parse_one_app(result_path):
+    """
+    parse one app's apksigner result
+    :param result_path: path to the apksigner result
+
+    :return: json object of the scheme result
+    """
     res = ['', '', '', '']
-    with open(file_path, 'r') as f:
+    with open(result_path, 'r') as f:
         for line in f:
             line = line.strip('\n')
             if "(JAR signing): " in line:
@@ -218,6 +246,22 @@ def parse_one_app(file_path): # file_path is the path to the detection result fi
             result.append(0)
         else:
             result.append(0)
-    return result
+
+    apk_signing_scheme = {
+        "v1": result[0],
+        "v2": result[1],
+        "v3": result[2],
+        "v4": result[3]
+    }
+    return apk_signing_scheme
 ```
 
+Refer to this script for more details.
+
+## CDF
+
+To examine if the app install number affects our measurement results, we provide some statistics of the app install number distribtions in this [doc](cdf_stats.md).
+
+## Bug Report
+
+If you find any bugs, please report them to [issues](https://github.com/xinjin95/IoTSpotter/issues).
