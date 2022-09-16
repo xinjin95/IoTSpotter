@@ -125,7 +125,7 @@ We recommend `conda` to setup the environment and install the required packages.
 
 First, create the conda environment,
 
-`conda create -n iotspotter python=3.8`
+`conda create -n iotspotter python=3.6`
 
 and activate the conda enviroment:
 
