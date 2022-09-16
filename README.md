@@ -15,7 +15,7 @@ IoTSpotter is a tool for automatically identifying mobile-IoT apps, IoT specific
   - [Citation](#citation)
   - [Data Release](#data-release)
     - [1. 37K mobile-IoT apps](#1-37k-mobile-iot-apps)
-    - [2. App manual validation and Confirmed IoT apps](#2-app-manual-validation-and-confirmed-iot-apps)
+    - [2. App manual validation and 5,100 Confirmed IoT apps](#2-app-manual-validation-and-5100-confirmed-iot-apps)
     - [3. 19K IoT specific package names](#3-19k-iot-specific-package-names)
     - [4. IoT specific library vulnerabilities](#4-iot-specific-library-vulnerabilities)
     - [5. Datasets of mobile-IoT app classifiers](#5-datasets-of-mobile-iot-app-classifiers)
@@ -100,7 +100,7 @@ We provide the corpus and IoTSpotter identification results. Please don't distri
 ```
 Since the total file size of all APKs of 37 mobile-IoT apps is more than 100GB, we recommend you to directly download them via [Androzoo](https://androzoo.uni.lu/). For the same APKs that we used for analysis, you can download them via Androzoo APIs with the [sha256 signatures](data/apk_androzoo_sha256/shared_sha256_androzoo.csv). 
 
-### 2. App manual validation and Confirmed IoT apps
+### 2. App manual validation and 5,100 Confirmed IoT apps
 
 As stated in our paper, we manually validated some apps to give more confident results. 
 
