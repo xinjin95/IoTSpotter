@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: xxx xxx
-@license: (C) Copyright 2013-2019.
-@contact: xxx.xxx0010@gmail.com
-@software: pycharm
-@file: large_scale_maven_crawler.py
-@time: 8/5/21 3:20 PM
-@desc:
+@author: Xin Jin
+@contact: xinjin5991@gmail.com
 """
 import json
 import os.path

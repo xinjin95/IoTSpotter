@@ -187,7 +187,16 @@ Commands to run the maven repo crawler:
 
 `python maven_repo/large_scale_maven_crawler.py`
 
-After crawling a list of library jar files will be downloaded, you can identify the vulnerable libraries and related CVEs under [data/maven_crawling/](data/maven_crawling). we then use [LibScout](https://github.com/reddr/LibScout) to detect the vulnerable library usages. 
+After crawling, a list of library jar files will be downloaded. 
+
+Moreover, as mentioned in the paper, we noticed that the maven repo (mvnrepository.com) annotates vulnerable libraries, e.g.,
+
+<p align="center"><img src="figure/maven_repo_vuln.PNG" alt="workflow" width="800"></p>
+
+We also provide the [script](maven_repo/lib_vuln_crawler.py) for crawling the vulnerable library information. 
+If you want to identify the vulnerable libraries, you can run this script with preparing the start urls as above. The vulnerability information of our IoT specific libraries are provided in [this file](data/maven_crawling/vulnerability.txt).
+
+you can identify the vulnerable libraries and related CVEs under [data/maven_crawling/](data/maven_crawling). we then use [LibScout](https://github.com/reddr/LibScout) to detect the vulnerable library usages.
 
 ## Cryptographic-API misuse analysis
 
