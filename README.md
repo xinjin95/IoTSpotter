@@ -315,4 +315,4 @@ To examine if the app install number affects our measurement results, we provide
 
 ## Bug Report
 
-If you find any problems, please consider to file an [issue](https://github.com/xinjin95/IoTSpotter/issues) or contact the author via xinjin5991@gmail.com.
+If you find any problems, please consider to file an [issue](https://github.com/xinjin95/IoTSpotter/issues) or contact us via xinjin5991@gmail.com.
