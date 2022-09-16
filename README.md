@@ -22,7 +22,8 @@ IoTSpotter is a tool for automatically identifying mobile-IoT apps, IoT specific
   - [Installation](#installation)
   - [Mobile-IoT classifier](#mobile-iot-classifier)
   - [IoT product NER model](#iot-product-ner-model)
-  - [IoT library vulnerability analysis](#iot-library-vulnerability-analysis)
+  - [Third-party library identification](#third-party-library-identification)
+  - [IoT library curation and vulnerability analysis](#iot-library-curation-and-vulnerability-analysis)
     - [1. Identify maven repository links by google search](#1-identify-maven-repository-links-by-google-search)
     - [2. Crawl IoT specific libraries from maven repository](#2-crawl-iot-specific-libraries-from-maven-repository)
     - [3. Collect vulnerable library information](#3-collect-vulnerable-library-information)
@@ -95,7 +96,7 @@ Our differential analysis component identifies 19K 3rd-party library package nam
 
 ### 3. IoT specific library vulnerabilities
 
-We provide the vulnerability information (i.e., CVEs) for the IoT specific libraries collected from maven repository in this [file](data/maven_crawling/vulnerability.txt). If you want to identify more vulnerabilities, you can use our script specified in [this section](#maven-crawling).
+We provide the vulnerability information (i.e., CVEs) for the IoT specific libraries collected from maven repository in this [file](data/maven_crawling/vulnerability.txt). If you want to identify more vulnerabilities, you can use our script specified in [this section](#iot-library-curation-and-vulnerability-analysis).
 
 ### 4. Datasets of mobile-IoT app classifiers
 
@@ -154,7 +155,11 @@ For the BERT model, we provide the script and instructions along with the classi
 
 For the NER model, we give instructions on how to run it along with our [code](https://drive.google.com/file/d/1HxqHFE-VnofdMNHWEyyjLXymRMzrzWfn/view?usp=sharing).
 
-## IoT library vulnerability analysis
+## Third-party library identification
+
+We provide the executable and code of our third-party library identification module [here](https://github.com/xinjin95/LibScope).
+
+## IoT library curation and vulnerability analysis
 
 ### 1. Identify maven repository links by google search
 
