@@ -15,11 +15,12 @@ IoTSpotter is a tool for automatically identifying mobile-IoT apps, IoT specific
   - [Citation](#citation)
   - [Data Release](#data-release)
     - [1. 37K mobile-IoT apps](#1-37k-mobile-iot-apps)
-    - [2. 19K IoT specific package names](#2-19k-iot-specific-package-names)
-    - [3. IoT specific library vulnerabilities](#3-iot-specific-library-vulnerabilities)
-    - [4. Datasets of mobile-IoT app classifiers](#4-datasets-of-mobile-iot-app-classifiers)
-    - [5. Mobile-IoT app classifiers](#5-mobile-iot-app-classifiers)
-    - [6. IoT products and name entity recognition (NER) model](#6-iot-products-and-name-entity-recognition-ner-model)
+    - [2. App manual validation and Confirmed IoT apps](#2-app-manual-validation-and-confirmed-iot-apps)
+    - [3. 19K IoT specific package names](#3-19k-iot-specific-package-names)
+    - [4. IoT specific library vulnerabilities](#4-iot-specific-library-vulnerabilities)
+    - [5. Datasets of mobile-IoT app classifiers](#5-datasets-of-mobile-iot-app-classifiers)
+    - [6. Mobile-IoT app classifiers](#6-mobile-iot-app-classifiers)
+    - [7. IoT products and name entity recognition (NER) model](#7-iot-products-and-name-entity-recognition-ner-model)
   - [Installation](#installation)
   - [Mobile-IoT classifier](#mobile-iot-classifier)
   - [IoT product NER model](#iot-product-ner-model)
@@ -99,23 +100,33 @@ We provide the corpus and IoTSpotter identification results. Please don't distri
 ```
 Since the total file size of all APKs of 37 mobile-IoT apps is more than 100GB, we recommend you to directly download them via [Androzoo](https://androzoo.uni.lu/). For the same APKs that we used for analysis, you can download them via Androzoo APIs with the [sha256 signatures](data/apk_androzoo_sha256/shared_sha256_androzoo.csv). 
 
-### 2. 19K IoT specific package names
+### 2. App manual validation and Confirmed IoT apps
+
+As stated in our paper, we manually validated some apps to be more confident about our results. 
+
+Specically, we annotated the 917 mobile-IoT apps with > 1M downloads and the validation results are provided in this [file](data/app_validation/917_1M_apps_validation.csv), where the column of `pkg_name` is the `app_id` in the metadata file (we should have use the consistent identity of apps but unfortunately we used `pkg_name` and `app_id` in different places. If you are confused, free feel to file an issue or contact the author via xinjin5991@gmail.com) and `manual_label` is 1 when the app is an IoT app.
+
+Moreover, we also annotated 2250 randomly sampled apps from 37K mobile-IoT apps. And the validation results are in this [file](data/app_validation/2250_apps_validation.csv).
+
+Finally, we combined all the apps that we have manually labeled and validated from our training/validation/test sets, 917 validated apps, and 2250 validated apps. The combined results are in this [file](data/app_validation/all_labeled_apps.csv), in which 6,648 apps are confirmed as IoT apps.
+
+### 3. 19K IoT specific package names
 
 Our differential analysis component identifies 19K 3rd-party library package names, which can be found [here](data/3rd_party_lib/filtered_package_names.txt). Each line of the file corresponds to one unique package name. Here, package names are the name of [JAVA packages](https://docs.oracle.com/javase/tutorial/java/concepts/package.html).
 
-### 3. IoT specific library vulnerabilities
+### 4. IoT specific library vulnerabilities
 
 We provide the vulnerability information (i.e., CVEs) for the IoT specific libraries collected from maven repository in this [file](data/maven_crawling/vulnerability.txt). If you want to identify more vulnerabilities, you can use our script specified in [this section](#iot-library-curation-and-vulnerability-analysis).
 
-### 4. Datasets of mobile-IoT app classifiers
+### 5. Datasets of mobile-IoT app classifiers
 
 You can find our annotated datasets under [data/dataset](data/dataset), where the `label` is 1 (IoT) and 0 (non-IoT). Part of the IoT app samples are from Wang'2019 USENIX Security paper, we obtained all their apps from this [link](http://seclab.soic.indiana.edu/xw48/iot_companion_appset.tar.gz). Then we removed the apps that were not in GPlay any more and obtained the remaining apps for annotataion. And we provide the remaining app list [here](data/artifacts/app_list.txt).
 
-### 5. Mobile-IoT app classifiers
+### 6. Mobile-IoT app classifiers
 
 For the mobile-IoT app classifiers, you can find the BiLSTM classifier under [data/classifiers/](data/classifiers/bilstm.h5) and download the BERT model via this [link](https://drive.google.com/drive/folders/1qzGOPXfE4FLZRfF0GoL1iFdfazwvGGlf?usp=sharing).
 
-### 6. IoT products and name entity recognition (NER) model
+### 7. IoT products and name entity recognition (NER) model
 
 You can download the NER dataset, script and model via this [link](https://drive.google.com/file/d/1HxqHFE-VnofdMNHWEyyjLXymRMzrzWfn/view?usp=sharing). After identifying the IoT products, we cluster them with [GSDMM model](https://github.com/rwalk/gsdmm-rust). You can find resulting clusters [here](data/artifacts/iot_product_clustering_results.zip), in which the non-empty files are unique clusters.
 
