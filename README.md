@@ -15,14 +15,17 @@ IoTSpotter is a tool for automatically identifying mobile-IoT apps, IoT specific
   - [Data Release](#data-release)
     - [1. 37K mobile-IoT apps](#1-37k-mobile-iot-apps)
     - [2. 19K IoT specific package names](#2-19k-iot-specific-package-names)
-    - [3. Datasets of mobile-IoT app classifiers](#3-datasets-of-mobile-iot-app-classifiers)
-    - [4. Mobile-IoT app classifiers](#4-mobile-iot-app-classifiers)
-    - [5. IoT products and name entity recognition (NER) model](#5-iot-products-and-name-entity-recognition-ner-model)
+    - [3. IoT specific library vulnerabilities](#3-iot-specific-library-vulnerabilities)
+    - [4. Datasets of mobile-IoT app classifiers](#4-datasets-of-mobile-iot-app-classifiers)
+    - [5. Mobile-IoT app classifiers](#5-mobile-iot-app-classifiers)
+    - [6. IoT products and name entity recognition (NER) model](#6-iot-products-and-name-entity-recognition-ner-model)
   - [Installation](#installation)
   - [Mobile-IoT classifier](#mobile-iot-classifier)
   - [IoT product NER model](#iot-product-ner-model)
   - [IoT library vulnerability analysis](#iot-library-vulnerability-analysis)
-    - [1. Crawl IoT Specific Libraries from Maven Repository](#1-crawl-iot-specific-libraries-from-maven-repository)
+    - [1. Identify maven repository links by google search](#1-identify-maven-repository-links-by-google-search)
+    - [2. Crawl IoT specific libraries from maven repository](#2-crawl-iot-specific-libraries-from-maven-repository)
+    - [3. Collect vulnerable library information](#3-collect-vulnerable-library-information)
   - [Cryptographic-API misuse analysis](#cryptographic-api-misuse-analysis)
   - [APK signature vulnerability analysis](#apk-signature-vulnerability-analysis)
   - [CDF](#cdf)
@@ -90,15 +93,19 @@ Since the total file size of all APKs of 37 mobile-IoT apps is more than 100GB, 
 
 Our differential analysis component identifies 19K 3rd-party library package names, which can be found [here](data/3rd_party_lib/filtered_package_names.txt). Each line of the file corresponds to one unique package name. Here, package names are the name of [JAVA packages](https://docs.oracle.com/javase/tutorial/java/concepts/package.html).
 
-### 3. Datasets of mobile-IoT app classifiers
+### 3. IoT specific library vulnerabilities
+
+We provide the vulnerability information (i.e., CVEs) for the IoT specific libraries collected from maven repository in this [file](data/maven_crawling/vulnerability.txt). If you want to identify more vulnerabilities, you can use our script specified in [this section](#maven-crawling).
+
+### 4. Datasets of mobile-IoT app classifiers
 
 You can find our annotated datasets under [data/dataset](data/dataset), where the `label` is 1 (IoT) and 0 (non-IoT). Part of the IoT app samples are from Wang'2019 USENIX Security paper, we obtained all their apps from this [link](http://seclab.soic.indiana.edu/xw48/iot_companion_appset.tar.gz). Then we removed the apps that were not in GPlay any more and obtained the remaining apps for annotataion. And we provide the remaining app list [here](data/artifacts/app_list.txt).
 
-### 4. Mobile-IoT app classifiers
+### 5. Mobile-IoT app classifiers
 
 For the mobile-IoT app classifiers, you can find the BiLSTM classifier under [data/classifiers/](data/classifiers/bilstm.h5) and download the BERT model via this [link](https://drive.google.com/drive/folders/1qzGOPXfE4FLZRfF0GoL1iFdfazwvGGlf?usp=sharing).
 
-### 5. IoT products and name entity recognition (NER) model
+### 6. IoT products and name entity recognition (NER) model
 
 You can download the NER dataset, script and model via this [link](https://drive.google.com/file/d/1HxqHFE-VnofdMNHWEyyjLXymRMzrzWfn/view?usp=sharing). After identifying the IoT products, we cluster them with [GSDMM model](https://github.com/rwalk/gsdmm-rust). You can find resulting clusters [here](data/artifacts/iot_product_clustering_results.zip), in which the non-empty files are unique clusters.
 
@@ -149,7 +156,13 @@ For the NER model, we give instructions on how to run it along with our [code](h
 
 ## IoT library vulnerability analysis
 
-### 1. Crawl IoT Specific Libraries from Maven Repository
+### 1. Identify maven repository links by google search
+
+To identify the maven repository links for our interested libraries (e.g., IoT and non-IoT libraries), we use the google search engine. If you seek for fast google search APIs, you may be interested in the [programmable search api](https://developers.google.com/custom-search/v1/overview).
+
+We provide the script to crawl the google search results via this [script](maven_repo/google_search.py). Note that google sets rate limits for our search queries, so you may expect to finish several hundreds of search queries per day.
+
+### 2. Crawl IoT specific libraries from maven repository
 
 To crawl the library file from maven repository, you have to first prepare a lost of starting [links](data/maven_crawling/maven_matched.txt), e.g., 
 
@@ -188,6 +201,8 @@ Commands to run the maven repo crawler:
 `python maven_repo/large_scale_maven_crawler.py`
 
 After crawling, a list of library jar files will be downloaded. 
+
+### 3. Collect vulnerable library information
 
 Moreover, as mentioned in the paper, we noticed that the maven repo (mvnrepository.com) annotates vulnerable libraries, e.g.,
 
