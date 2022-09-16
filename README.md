@@ -102,7 +102,7 @@ Since the total file size of all APKs of 37 mobile-IoT apps is more than 100GB, 
 
 ### 2. App manual validation and Confirmed IoT apps
 
-As stated in our paper, we manually validated some apps to be more confident about our results. 
+As stated in our paper, we manually validated some apps to give more confident results. 
 
 Specically, we annotated the 917 mobile-IoT apps with > 1M downloads and the validation results are provided in this [file](data/app_validation/917_1M_apps_validation.csv), where the column of `pkg_name` is the `app_id` in the metadata file (we should have use the consistent identity of apps but unfortunately we used `pkg_name` and `app_id` in different places. If you are confused, free feel to file an issue or contact the author via xinjin5991@gmail.com) and `manual_label` is 1 when the app is an IoT app.
 
