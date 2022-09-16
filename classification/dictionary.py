@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: xxx xxx
-@license: (C) Copyright 2013-2019.
-@contact: xxx.xxx0010@gmail.com
-@software: pycharm
-@file: dictionary.py
-@time: 3/26/20 4:23 PM
-@description: this file provide some method to process dictionary data type
+@author: Xin Jin
+@contact: xinjin5991@gmail.com
 """
 from itertools import islice
 

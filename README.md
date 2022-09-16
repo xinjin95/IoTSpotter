@@ -138,6 +138,8 @@ To classify model, run the following commands:
 
 `python classification.py`
 
+If you want to classify your own apps, you have to first obtain the app's description from app market place. Then you can use our preprocessing script to preprocess the description and feed it to the classifier. The script is under [classification/preprocess.py](classification/preprocess.py), where the processing function is `preprocess_one_description`.
+
 For the BERT model, we provide the script and instructions along with the classifier via this [link](https://drive.google.com/drive/folders/1qzGOPXfE4FLZRfF0GoL1iFdfazwvGGlf?usp=sharing).
 
 
@@ -264,4 +266,4 @@ To examine if the app install number affects our measurement results, we provide
 
 ## Bug Report
 
-If you find any bugs, please report them to [issues](https://github.com/xinjin95/IoTSpotter/issues).
+If you find any problems, please consider to file an [issue](https://github.com/xinjin95/IoTSpotter/issues).

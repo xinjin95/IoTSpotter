@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-@author: xxx xxx
-@license: (C) Copyright 2013-2019.
-@contact: xxx.xxx0010@gmail.com
-@software: pycharm
-@file: keras_utility.py
-@time: 3/26/20 10:46 AM
-@description: this file has some common methods used in training and inference for keras
+@author: Xin Jin
+@contact: xinjin5991@gmail.com
 """
 
 import numpy as np
@@ -136,17 +131,4 @@ def model_visualization(model, image_save_path):
     plot_model(model, image_save_path)
 
 
-if __name__ == "__main__":
-    # tp = TextProcessor("")
-    # tp.text = "0   18 out in  116  12  14 aliiiii youve"
-    # glove = glove_dictionary_load()
-    # res = tp.process(remove_stop_word=False, model_embedding=glove, use_model_filter=True)
-    # print(res)
-    # layout_model = model_load("../data/classifier/input_classifier_keras.h5")
-    # layout_model.summary()
-    # model_visualization(layout_model, "../data/classifier/image_input_model.png")
-    model_path = "../data/classifiers/cnn.h5"
-    model = model_load(model_path)
-    model_fig_path = "../data/classifiers/cnn.png"
-    model_visualization(model, model_fig_path)
 
