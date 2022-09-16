@@ -108,7 +108,7 @@ Specically, we annotated the 917 mobile-IoT apps with > 1M downloads and the val
 
 Moreover, we also annotated 2250 randomly sampled apps from 37K mobile-IoT apps. And the validation results are in this [file](data/app_validation/2250_apps_validation.csv).
 
-Finally, we combined all the apps that we have manually labeled and validated from our training/validation/test sets, 917 validated apps, and 2250 validated apps. The combined results are in this [file](data/app_validation/all_labeled_apps.csv), in which 6,648 apps are confirmed as IoT apps.
+Finally, we combined all the apps that we have manually labeled and validated from our training/validation/test sets, 917 validated apps, and 2250 validated apps. The combined results are in this [file](data/app_validation/all_labeled_apps.csv), in which 5,100 apps are confirmed as IoT apps.
 
 ### 3. 19K IoT specific package names
 
