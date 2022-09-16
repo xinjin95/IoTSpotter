@@ -12,6 +12,7 @@ IoTSpotter is a tool for automatically identifying mobile-IoT apps, IoT specific
 - [IoTSpotter Artifact](#iotspotter-artifact)
   - [Introduction](#introduction)
   - [Table of Contents](#table-of-contents)
+  - [Citation](#citation)
   - [Data Release](#data-release)
     - [1. 37K mobile-IoT apps](#1-37k-mobile-iot-apps)
     - [2. 19K IoT specific package names](#2-19k-iot-specific-package-names)
@@ -31,6 +32,14 @@ IoTSpotter is a tool for automatically identifying mobile-IoT apps, IoT specific
   - [APK signature vulnerability analysis](#apk-signature-vulnerability-analysis)
   - [CDF](#cdf)
   - [Bug Report](#bug-report)
+
+## Citation
+
+If you find this tool useful, please consider to cite our paper [IoTSpotter](https://www.adwaitnadkarni.com/downloads/manandhar-ccs22.pdf) (bib coming soon):
+
+```plaintext
+
+```
 
 ## Data Release
 
@@ -296,3 +305,4 @@ To examine if the app install number affects our measurement results, we provide
 ## Bug Report
 
 If you find any problems, please consider to file an [issue](https://github.com/xinjin95/IoTSpotter/issues).
+
