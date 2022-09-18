@@ -177,7 +177,7 @@ For the NER model, we give instructions on how to run it along with our [code](h
 
 ## Third-party library identification
 
-We provide the executable and code of our third-party library identification module [here](https://github.com/xinjin95/LibScope).
+We provide the executable and code of our third-party library identification module [here](https://github.com/xinjin95/app-third-party-library).
 
 ## IoT library curation and vulnerability analysis
 
