@@ -114,6 +114,8 @@ Finally, we combined all the apps that we have manually labeled and validated fr
 
 Our differential analysis component identifies 19K 3rd-party library package names, which can be found [here](data/3rd_party_lib/filtered_package_names.txt). Each line of the file corresponds to one unique package name. Here, package names are the name of [JAVA packages](https://docs.oracle.com/javase/tutorial/java/concepts/package.html).
 
+Moreover, we also release the information about the apps using each of the 19K package names. You can find it in [this file](data/3rd_party_lib/iot_lib_map_ranked.txt). Moreover, we also cluster the 19K package names based on their prefixes (length of 3) and identify the iot apps using these package names of each prefix. You can find the results in [this file](data/3rd_party_lib/cluster_app_mapping.txt).
+
 ### 4. IoT specific library vulnerabilities
 
 We provide the identified vulnerable libraries and the vulnerabilities (i.e., CVEs) in this [file](data/maven_crawling/vulnerability.txt). If you want to identify more vulnerabilities, you can use our script specified in [this section](#iot-library-curation-and-vulnerability-analysis).
