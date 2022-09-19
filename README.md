@@ -116,7 +116,9 @@ Our differential analysis component identifies 19K 3rd-party library package nam
 
 ### 4. IoT specific library vulnerabilities
 
-We provide the vulnerability information (i.e., CVEs) for the IoT specific libraries collected from maven repository in this [file](data/maven_crawling/vulnerability.txt). If you want to identify more vulnerabilities, you can use our script specified in [this section](#iot-library-curation-and-vulnerability-analysis).
+We provide the identified vulnerable libraries and the vulnerabilities (i.e., CVEs) in this [file](data/maven_crawling/vulnerability.txt). If you want to identify more vulnerabilities, you can use our script specified in [this section](#iot-library-curation-and-vulnerability-analysis).
+
+For our identified 27 vulnerable libraries that affecting the 40 top IoT apps (with > 50K downloads), we release the apps and the libraries in [this sheet](https://docs.google.com/spreadsheets/d/1ShkskYD6gteH5rjTO6SSJJ0DaPm36N8DqNZq_k4x6wU/edit?usp=sharing).
 
 ### 5. Datasets of mobile-IoT app classifiers
 
@@ -315,4 +317,4 @@ To examine if the app install number affects our measurement results, we provide
 
 ## Bug Report
 
-If you find any problems, please consider to file an [issue](https://github.com/xinjin95/IoTSpotter/issues) or contact us via xinjin5991@gmail.com.
+If you find any problems, please consider to file an [issue](https://github.com/xinjin95/IoTSpotter/issues) or contact us via jin.967@osu.edu or xinjin5991@gmail.com.
