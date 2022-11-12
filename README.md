@@ -36,10 +36,16 @@ IoTSpotter is a tool for automatically identifying mobile-IoT apps, IoT specific
 
 ## Citation
 
-If you find this tool useful, please consider to cite our paper [IoTSpotter](https://xinjin95.github.io/assets/pdf/IoTSpotter_ccs2022_paper.pdf) (bib coming soon):
+If you find this tool useful, please consider to cite our paper [IoTSpotter](https://xinjin95.github.io/assets/pdf/IoTSpotter_ccs2022_paper.pdf):
 
 ```plaintext
-
+@inproceedings{jin2022understanding,
+  title={Understanding IoT Security from a Market-Scale Perspective},
+  author={Jin, Xin and Manandhar, Sunil and Kafle, Kaushal and Lin, Zhiqiang and Nadkarni, Adwait},
+  booktitle={Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security},
+  pages={1615--1629},
+  year={2022}
+}
 ```
 
 ## Data Release
