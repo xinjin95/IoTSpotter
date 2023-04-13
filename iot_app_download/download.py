@@ -68,8 +68,8 @@ def check_sha256(pkg_name, sha256):
 
 
 def single_download(pkg_name, sha256):
-    cmd = "curl -s -O --remote-header-name -G -d apikey=cbd81226806588c5be781727bdbec483890f514bf2f0981721dc124869cf9404" \
-          " -d sha256=%s https://androzoo.uni.lu/api/download" % sha256
+    cmd = "curl -s -O --remote-header-name -G -d apikey=your_api_key" \
+          " -d sha256=%s https://androzoo.uni.lu/api/download" % sha256 # put replace your_api_key with your own Androzoo key.
     execute(cmd)
     check_sha256(pkg_name, sha256)
     with lock:
